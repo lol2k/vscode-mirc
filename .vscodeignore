@@ -1,0 +1,5 @@
+**/*.vsix
+_test/**
+.git/**
+.gitignore
+.vsixmanifest

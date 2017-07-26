@@ -1,0 +1,60 @@
+{
+	"name": "mirc",
+	"displayName": "mIRC",
+	"description": "mIRC scripting language support for VS Code",
+	"version": "0.0.1",
+	"publisher": "lol2k",
+	"license": "./LICENSE.md",
+	"categories": ["Languages", "Snippets"],
+	"keywords": ["mirc", "mrc"],
+	"icon": "icon.png",
+	"galleryBanner": {
+		"color": "#11395F",
+		"theme": "dark"
+	},
+	"engines": {
+		"vscode": "^1.8.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/lol2k/vscode-mirc.git"
+	},
+	"bugs": {
+		"url": "https://github.com/lol2k/vscode-mirc/issues"
+	},
+	"contributes": {
+		"languages": [
+			{
+				"id": "mrc",
+				"aliases": ["mIRC", "mirc", "mrc"],
+				"extensions": [".mrc"],
+				"configuration": "./syntaxes/mrc.configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "mrc",
+				"scopeName": "source.mrc",
+				"path": "./syntaxes/mrc.tmLanguage.json"
+			}
+		],
+		"snippets": [
+			{
+				"language": "mrc",
+				"path": "./snippets/snippets-commands.json"
+			},
+			{
+				"language": "mrc",
+				"path": "./snippets/snippets-identifiers.json"
+			},
+			{
+				"language": "mrc",
+				"path": "./snippets/snippets-events.json"
+			},
+			{
+				"language": "mrc",
+				"path": "./snippets/snippets-comparison-operators.json"
+			}
+		]
+	}
+}

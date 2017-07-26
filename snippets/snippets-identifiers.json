@@ -1,0 +1,1600 @@
+{
+    "source.mrc": {
+        "$abook()": {
+            "prefix": "$abook()",
+            "body": "\\$abook(${1:nick}, ${2:N})"
+        },
+        "$abs()": {
+            "prefix": "$abs()",
+            "body": "\\$abs(${1:N})"
+        },
+        "$acos()": {
+            "prefix": "$acos()",
+            "body": "\\$acos(${1:N})"
+        },
+        "$active": {
+            "prefix": "$active",
+            "body": "\\$active"
+        },
+        "$activecid": {
+            "prefix": "$activecid",
+            "body": "\\$activecid"
+        },
+        "$activewid": {
+            "prefix": "$activewid",
+            "body": "\\$activewid"
+        },
+        "$address": {
+            "prefix": "$address",
+            "body": "\\$address"
+        },
+        "$address()": {
+            "prefix": "$address()",
+            "body": "\\$address(${1:nick}, ${2:type})"
+        },
+        "$addtok()": {
+            "prefix": "$addtok()",
+            "body": "\\$addtok(${1:text}, ${2:token}, ${3:C})"
+        },
+        "$addtokcs()": {
+            "prefix": "$addtokcs()",
+            "body": "\\$addtokcs(${1:text}, ${2:token}, ${3:C})"
+        },
+        "$agent()": {
+            "prefix": "$agent()",
+            "body": "\\$agent(${1:name}${2:, ${3:[N]}})"
+        },
+        "$agent().char": {
+            "prefix": "$agent().char",
+            "body": "\\$agent(${1:N}).char"
+        },
+        "$agentname": {
+            "prefix": "$agentname",
+            "body": "\\$agentname"
+        },
+        "$agentstat": {
+            "prefix": "$agentstat",
+            "body": "\\$agentstat"
+        },
+        "$agentver": {
+            "prefix": "$agentver",
+            "body": "\\$agentver"
+        },
+        "$alias()": {
+            "prefix": "$alias()",
+            "body": "\\$alias(${1:N|filename})"
+        },
+        "$and()": {
+            "prefix": "$and()",
+            "body": "\\$and(${1:A}, ${2:B})"
+        },
+        "$anick": {
+            "prefix": "$anick",
+            "body": "\\$anick"
+        },
+        "$ansi2mirc()": {
+            "prefix": "$ansi2mirc()",
+            "body": "\\$ansi2mirc(${1:text})"
+        },
+        "$aop": {
+            "prefix": "$aop",
+            "body": "\\$aop"
+        },
+        "$appactive": {
+            "prefix": "$appactive",
+            "body": "\\$appactive"
+        },
+        "$appstate": {
+            "prefix": "$appstate",
+            "body": "\\$appstate"
+        },
+        "$asc()": {
+            "prefix": "$asc()",
+            "body": "\\$asc(${1:C})"
+        },
+        "$asctime()": {
+            "prefix": "$asctime()",
+            "body": "\\$asctime(${1:N|format}${2:, ${3:[format]}})"
+        },
+        "$asin()": {
+            "prefix": "$asin()",
+            "body": "\\$asin(${1:N})"
+        },
+        "$atan()": {
+            "prefix": "$atan()",
+            "body": "\\$atan(${1:N})"
+        },
+        "$atan2()": {
+            "prefix": "$atan2()",
+            "body": "\\$atan2(${1:N}, ${2:M})"
+        },
+        "$away": {
+            "prefix": "$away",
+            "body": "\\$away"
+        },
+        "$awaymsg": {
+            "prefix": "$awaymsg",
+            "body": "\\$awaymsg"
+        },
+        "$awaytime": {
+            "prefix": "$awaytime",
+            "body": "\\$awaytime"
+        },
+        "$avoice": {
+            "prefix": "$avoice",
+            "body": "\\$avoice"
+        },
+        "$avoice()": {
+            "prefix": "$avoice()",
+            "body": "\\$avoice(${1:address|N})"
+        },
+        "$banmask": {
+            "prefix": "$banmask",
+            "body": "\\$banmask"
+        },
+        "$base()": {
+            "prefix": "$base()",
+            "body": "\\$base(${1:N}, ${2:inbase}, ${3:outbase}${4:, ${5:[zeropad]}${6:, ${7:[precision]}}})"
+        },
+        "$bfind()": {
+            "prefix": "$bfind()",
+            "body": "\\$bfind(&${1:bvar}, ${2:N}, ${3:M})"
+        },
+        "$bindip()": {
+            "prefix": "$bindip()",
+            "body": "\\$bindip(${1:N|ipaddress})"
+        },
+        "$bitoff()": {
+            "prefix": "$bitoff()",
+            "body": "\\$bitoff(${1:A}, ${2:N})"
+        },
+        "$biton()": {
+            "prefix": "$biton()",
+            "body": "\\$biton(${1:A}, ${2:N})"
+        },
+        "$bnick": {
+            "prefix": "$bnick",
+            "body": "\\$bnick"
+        },
+        "$bvar()": {
+            "prefix": "$bvar()",
+            "body": "\\$bvar(&${1:bvar}, ${2:N}${3:, ${4:[M]}})"
+        },
+        "$bytes()": {
+            "prefix": "$bytes()",
+            "body": "\\$bytes(${1:N}, ${2:bkmgt3d})"
+        },
+        "$calc()": {
+            "prefix": "$calc()",
+            "body": "\\$calc(${1:operations})"
+        },
+        "$cb": {
+            "prefix": "$cb",
+            "body": "\\$cb"
+        },
+        "$cb()": {
+            "prefix": "$cb()",
+            "body": "\\$cb(${1:N})"
+        },
+        "$cd": {
+            "prefix": "$cd",
+            "body": "\\$cd"
+        },
+        "$chan": {
+            "prefix": "$chan",
+            "body": "\\$chan"
+        },
+        "$chan()": {
+            "prefix": "$chan()",
+            "body": "\\$chan(${1:N|#})"
+        },
+        "$chanmodes": {
+            "prefix": "$chanmodes",
+            "body": "\\$chanmodes"
+        },
+        "$chantypes": {
+            "prefix": "$chantypes",
+            "body": "\\$chantypes"
+        },
+        "$chat()": {
+            "prefix": "$chat()",
+            "body": "\\$chat(${1:N|nick}${2:, ${3:[N]}})"
+        },
+        "$chr()": {
+            "prefix": "$chr()",
+            "body": "\\$chr(${1:N})"
+        },
+        "$cid": {
+            "prefix": "$cid",
+            "body": "\\$cid"
+        },
+        "$clevel": {
+            "prefix": "$clevel",
+            "body": "\\$clevel"
+        },
+        "$click()": {
+            "prefix": "$click()",
+            "body": "\\$click(@${1:window}, ${2:N})"
+        },
+        "$cmdbox": {
+            "prefix": "$cmdbox",
+            "body": "\\$cmdbox"
+        },
+        "$cmdline": {
+            "prefix": "$cmdline",
+            "body": "\\$cmdline"
+        },
+        "$cnick()": {
+            "prefix": "$cnick()",
+            "body": "\\$cnick(${1:N|nick}${2:, ${3:[M]}})"
+        },
+        "$color()": {
+            "prefix": "$color()",
+            "body": "\\$color(${1:name|N})"
+        },
+        "$com()": {
+            "prefix": "$com()",
+            "body": "\\$com(${1:name}, ${2:member}, ${3:method}${4:, ${5:[type1}, ${6:value1}${7:, ${8:[typeN}, ${9:valueN]]}}})"
+        },
+        "$com()": {
+            "prefix": "$com()",
+            "body": "\\$com(${1:name|N}${2:, ${3:[varname|&bvar]}})"
+        },
+        "$comcall()": {
+            "prefix": "$comcall()",
+            "body": "\\$comcall(${1:name}, ${2:alias}, ${3:member}, ${4:method}, ${5:type1}, ${6:value1}${7:, ${8:[typeN}, ${9:valueN]}})"
+        },
+        "$comchan()": {
+            "prefix": "$comchan()",
+            "body": "\\$comchan(${1:nick}, ${2:N})"
+        },
+        "$comerr": {
+            "prefix": "$comerr",
+            "body": "\\$comerr"
+        },
+        "$compact": {
+            "prefix": "$compact",
+            "body": "\\$compact"
+        },
+        "$compress()": {
+            "prefix": "$compress()",
+            "body": "\\$compress(${1:file|&bvar}, ${2:blN})"
+        },
+        "$comval()": {
+            "prefix": "$comval()",
+            "body": "\\$comval(${1:name}, ${2:N}, ${3:member})"
+        },
+        "$cos()": {
+            "prefix": "$cos()",
+            "body": "\\$cos(${1:N})"
+        },
+        "$cosh()": {
+            "prefix": "$cosh()",
+            "body": "\\$cosh(${1:N})"
+        },
+        "$count()": {
+            "prefix": "$count()",
+            "body": "\\$count(${1:string}, ${2:substring1}${3:, ${4:[substringN]}})"
+        },
+        "$cr": {
+            "prefix": "$cr",
+            "body": "\\$cr"
+        },
+        "$crc()": {
+            "prefix": "$crc()",
+            "body": "\\$crc(${1:text|&bvar|filename}${2:, ${3:[N = 2]}})"
+        },
+        "$disk()": {
+            "prefix": "$disk()",
+            "body": "\\$disk(${1:path|N})"
+        },
+        "$creq": {
+            "prefix": "$creq",
+            "body": "\\$creq"
+        },
+        "$crlf": {
+            "prefix": "$crlf",
+            "body": "\\$crlf"
+        },
+        "$ctime": {
+            "prefix": "$ctime",
+            "body": "\\$ctime"
+        },
+        "$ctime()": {
+            "prefix": "$ctime()",
+            "body": "\\$ctime(${1:text})"
+        },
+        "$ctimer": {
+            "prefix": "$ctimer",
+            "body": "\\$ctimer"
+        },
+        "$ctrlenter": {
+            "prefix": "$ctrlenter",
+            "body": "\\$ctrlenter"
+        },
+        "$date": {
+            "prefix": "$date",
+            "body": "\\$date"
+        },
+        "$day": {
+            "prefix": "$day",
+            "body": "\\$day"
+        },
+        "$daylight": {
+            "prefix": "$daylight",
+            "body": "\\$daylight"
+        },
+        "$dbuh": {
+            "prefix": "$dbuh",
+            "body": "\\$dbuh"
+        },
+        "$dbuw": {
+            "prefix": "$dbuw",
+            "body": "\\$dbuw"
+        },
+        "$dccignore": {
+            "prefix": "$dccignore",
+            "body": "\\$dccignore"
+        },
+        "$dccignore()": {
+            "prefix": "$dccignore()",
+            "body": "\\$dccignore(${1:filename|N})"
+        },
+        "$dccport": {
+            "prefix": "$dccport",
+            "body": "\\$dccport"
+        },
+        "$dde()": {
+            "prefix": "$dde()",
+            "body": "\\$dde(${1:name}, ${2:topic}${3:, ${4:[item]}${5:, ${6:[delay]}}})"
+        },
+        "$ddename": {
+            "prefix": "$ddename",
+            "body": "\\$ddename"
+        },
+        "$debug": {
+            "prefix": "$debug",
+            "body": "\\$debug"
+        },
+        "$decode()": {
+            "prefix": "$decode()",
+            "body": "\\$decode(${1:%var|&bvar}${2:, ${3:[amubt = u]}${4:, ${5:[N = 1]}}})"
+        },
+        "$decompress()": {
+            "prefix": "$decompress()",
+            "body": "\\$decompress(${1:file|&bvar})"
+        },
+        "$deltok()": {
+            "prefix": "$deltok()",
+            "body": "\\$deltok(${1:text}, ${2:N[-N2]}, ${3:C})"
+        },
+        "$devent": {
+            "prefix": "$devent",
+            "body": "\\$devent"
+        },
+        "$dialog()": {
+            "prefix": "$dialog()",
+            "body": "\\$dialog(${1:name}, ${2:table}${3:, ${4:[parent]}})"
+        },
+        "$dialog()": {
+            "prefix": "$dialog()",
+            "body": "\\$dialog(${1:name|N})"
+        },
+        "$did()": {
+            "prefix": "$did()",
+            "body": "\\$did(${1:name}, ${2:id}${3:, ${4:[N]}})"
+        },
+        "$didreg()": {
+            "prefix": "$didreg()",
+            "body": "\\$didreg(${1:name}, ${2:id}, ${3:regex}${4:, ${5:[N]}})"
+        },
+        "$didtok()": {
+            "prefix": "$didtok()",
+            "body": "\\$didtok(${1:name}, ${2:id}, ${3:C})"
+        },
+        "$didwm()": {
+            "prefix": "$didwm()",
+            "body": "\\$didwm(${1:name}, ${2:id}, ${3:wildtext}${4:, ${5:[N]}})"
+        },
+        "$disk()": {
+            "prefix": "$disk()",
+            "body": "\\$disk(${1:path|N})"
+        },
+        "$dlevel": {
+            "prefix": "$dlevel",
+            "body": "\\$dlevel"
+        },
+        "$dll()": {
+            "prefix": "$dll()",
+            "body": "\\$dll(${1:filename|N})"
+        },
+        "$dll()": {
+            "prefix": "$dll()",
+            "body": "\\$dll(${1:filename}, ${2:procname}, ${3:data})"
+        },
+        "$dllcall()": {
+            "prefix": "$dllcall()",
+            "body": "\\$dllcall(${1:filename}, ${2:alias}, ${3:procname}, ${4:data})"
+        },
+        "$dname": {
+            "prefix": "$dname",
+            "body": "\\$dname"
+        },
+        "$dns()": {
+            "prefix": "$dns()",
+            "body": "\\$dns(${1:N})"
+        },
+        "$duration()": {
+            "prefix": "$duration()",
+            "body": "\\$duration(${1:seconds|\\$durationoutput}${2:, ${3:[N]}})"
+        },
+        "$ebeeps": {
+            "prefix": "$ebeeps",
+            "body": "\\$ebeeps"
+        },
+        "$editbox()": {
+            "prefix": "$editbox()",
+            "body": "\\$editbox(${1:window}, ${2:N})"
+        },
+        "$emailaddr": {
+            "prefix": "$emailaddr",
+            "body": "\\$emailaddr"
+        },
+        "$encode()": {
+            "prefix": "$encode()",
+            "body": "\\$encode(${1:%var|&bvar}${2:, ${3:[amubt = u]}${4:, ${5:[N = 1]}}})"
+        },
+        "$error": {
+            "prefix": "$error",
+            "body": "\\$error"
+        },
+        "$eval()": {
+            "prefix": "$eval()",
+            "body": "\\$eval(${1:text}${2:, ${3:[N = 1]}})"
+        },
+        "$event": {
+            "prefix": "$event",
+            "body": "\\$event"
+        },
+        "$exists()": {
+            "prefix": "$exists()",
+            "body": "\\$exists(${1:file|dir})"
+        },
+        "$feof": {
+            "prefix": "$feof",
+            "body": "\\$feof"
+        },
+        "$ferr": {
+            "prefix": "$ferr",
+            "body": "\\$ferr"
+        },
+        "$fgetc()": {
+            "prefix": "$fgetc()",
+            "body": "\\$fgetc(${1:name|N})"
+        },
+        "$file()": {
+            "prefix": "$file()",
+            "body": "\\$file(${1:filename})"
+        },
+        "$filename": {
+            "prefix": "$filename",
+            "body": "\\$filename"
+        },
+        "$filtered": {
+            "prefix": "$filtered",
+            "body": "\\$filtered"
+        },
+        "$finddir()": {
+            "prefix": "$finddir()",
+            "body": "\\$finddir(${1:dir}, ${2:wildcard}, ${3:N}${4:, ${5:[depth]}${6:, ${7:[@window|command]}}})"
+        },
+        "$finddirn": {
+            "prefix": "$finddirn",
+            "body": "\\$finddirn"
+        },
+        "$findfile()": {
+            "prefix": "$findfile()",
+            "body": "\\$findfile(${1:dir}, ${2:wildcard}, ${3:N}${4:, ${5:[depth]}${6:, ${7:[@window|command]}}})"
+        },
+        "$findfilen": {
+            "prefix": "$findfilen",
+            "body": "\\$findfilen"
+        },
+        "$findtok()": {
+            "prefix": "$findtok()",
+            "body": "\\$findtok(${1:text}, ${2:token}, ${3:N}, ${4:C})"
+        },
+        "$findtokcs()": {
+            "prefix": "$findtokcs()",
+            "body": "\\$findtokcs(${1:text}, ${2:token}, ${3:N}, ${4:C})"
+        },
+        "$fline()": {
+            "prefix": "$fline()",
+            "body": "\\$fline(@${1:window}, ${2:wildtext}, ${3:N}, ${4:T})"
+        },
+        "$floor()": {
+            "prefix": "$floor()",
+            "body": "\\$floor(${1:N})"
+        },
+        "$fopen()": {
+            "prefix": "$fopen()",
+            "body": "\\$fopen(${1:name|N})"
+        },
+        "$fread()": {
+            "prefix": "$fread()",
+            "body": "\\$fread(${1:name|N}${2:, ${3:[bytes}, &${4:bvar]}})"
+        },
+        "$fserve()": {
+            "prefix": "$fserve()",
+            "body": "\\$fserve(${1:nick|N}${2:, ${3:[N]}})"
+        },
+        "$fulladdress": {
+            "prefix": "$fulladdress",
+            "body": "\\$fulladdress"
+        },
+        "$fulldate": {
+            "prefix": "$fulldate",
+            "body": "\\$fulldate"
+        },
+        "$fullname": {
+            "prefix": "$fullname",
+            "body": "\\$fullname"
+        },
+        "$fullscreen": {
+            "prefix": "$fullscreen",
+            "body": "\\$fullscreen"
+        },
+        "$get()": {
+            "prefix": "$get()",
+            "body": "\\$get(${1:nick|N}${2:, ${3:[N]}})"
+        },
+        "$getdir()": {
+            "prefix": "$getdir()",
+            "body": "\\$getdir(${1:filespec})"
+        },
+        "$getdot()": {
+            "prefix": "$getdot()",
+            "body": "\\$getdot(@${1:window}, ${2:x}, ${3:y})"
+        },
+        "$gettok()": {
+            "prefix": "$gettok()",
+            "body": "\\$gettok(${1:text}, ${2:N[-N2]}, ${3:C})"
+        },
+        "$gmt": {
+            "prefix": "$gmt",
+            "body": "\\$gmt"
+        },
+        "$group()": {
+            "prefix": "$group()",
+            "body": "\\$group(${1:#|N})"
+        },
+        "$halted": {
+            "prefix": "$halted",
+            "body": "\\$halted"
+        },
+        "$hash()": {
+            "prefix": "$hash()",
+            "body": "\\$hash(${1:text}, ${2:B})"
+        },
+        "$height()": {
+            "prefix": "$height()",
+            "body": "\\$height(${1:text}, ${2:font}, ${3:size})"
+        },
+        "$hfind()": {
+            "prefix": "$hfind()",
+            "body": "\\$hfind(${1:name|N}, ${2:text}, ${3:N}${4:, ${5:[nwWrR = n]}${6:, ${7:[@window|command]}}})"
+        },
+        "$hget()": {
+            "prefix": "$hget()",
+            "body": "\\$hget(${1:name|N}${2:, ${3:[item]}${4:, &${5:[bvar]}}})"
+        },
+        "$hget().item": {
+            "prefix": "$hget().item",
+            "body": "\\$hget(${1:name|N}, ${2:N}).item"
+        },
+        "$hget().data": {
+            "prefix": "$hget().data",
+            "body": "\\$hget(${1:name|N}, ${2:N}).data"
+        },
+        "$highlight()": {
+            "prefix": "$highlight()",
+            "body": "\\$highlight(${1:text|N})"
+        },
+        "$hmac()": {
+            "prefix": "$hmac()",
+            "body": "\\$hmac(${1:text|filename|&bvar}, ${2:key}${3:, ${4:[md5|sha1|sha256|sha512 = sha1]}}${5:, ${6:[N = 1]}})"
+        },
+        "$hnick": {
+            "prefix": "$hnick",
+            "body": "\\$hnick"
+        },
+        "$host": {
+            "prefix": "$host",
+            "body": "\\$host"
+        },
+        "$hotline": {
+            "prefix": "$hotline",
+            "body": "\\$hotline"
+        },
+        "$hotlinepos": {
+            "prefix": "$hotlinepos",
+            "body": "\\$hotlinepos"
+        },
+        "$hotp()": {
+            "prefix": "$hotp()",
+            "body": "\\$hotp(${1:key}, ${2:count}${3:, ${4:[md5|sha1|sha256|sha512 = sha1]}}${5:, ${6:[digits = 6]}})"
+        },
+        "$hypot()": {
+            "prefix": "$hypot()",
+            "body": "\\$hypot(${1:N}, ${2:M})"
+        },
+        "$ial": {
+            "prefix": "$ial",
+            "body": "\\$ial"
+        },
+        "$ial()": {
+            "prefix": "$ial()",
+            "body": "\\$ial(${1:nick|mask}${2:, ${3:[N = 1]}})"
+        },
+        "$ialchan()": {
+            "prefix": "$ialchan()",
+            "body": "\\$ialchan(${1:nick|mask}, ${2:#}${3:, ${4:[N = 1]}})"
+        },
+        "$ibl()": {
+            "prefix": "$ibl()",
+            "body": "\\$ibl(${1:#}, ${2:N})"
+        },
+        "$idle": {
+            "prefix": "$idle",
+            "body": "\\$idle"
+        },
+        "$iel()": {
+            "prefix": "$iel()",
+            "body": "\\$iel(${1:#}, ${2:N})"
+        },
+        "$ifmatch": {
+            "prefix": "$ifmatch",
+            "body": "\\$ifmatch"
+        },
+        "$ignore": {
+            "prefix": "$ignore",
+            "body": "\\$ignore"
+        },
+        "$ignore()": {
+            "prefix": "$ignore()",
+            "body": "\\$ignore(${1:address|N})"
+        },
+        "$iif()": {
+            "prefix": "$iif()",
+            "body": "\\$iif(${1:C}, ${2:T}, ${3:F})"
+        },
+        "$iil()": {
+            "prefix": "$iil()",
+            "body": "\\$iil(${1:#}, ${2:N})"
+        },
+        "$inellipse()": {
+            "prefix": "$inellipse()",
+            "body": "\\$inellipse(${1:x}, ${2:y}, ${3:x1}, ${4:y1}, ${5:w1}, ${6:h1})"
+        },
+        "$ini()": {
+            "prefix": "$ini()",
+            "body": "\\$ini(${1:file}, ${2:topic|N}${3:, ${4:[item|N]}})"
+        },
+        "$inmidi": {
+            "prefix": "$inmidi",
+            "body": "\\$inmidi"
+        },
+        "$inpaste": {
+            "prefix": "$inpaste",
+            "body": "\\$inpaste"
+        },
+        "$inpoly()": {
+            "prefix": "$inpoly()",
+            "body": "\\$inpoly(${1:x}, ${2:y}, ${3:x1}, ${4:y1}, ${5:x2}, ${6:y2}${7:, ${8:[xN}, ${9:yN]}})"
+        },
+        "$input()": {
+            "prefix": "$input()",
+            "body": "\\$input(${1:prompt}${2:, ${3:[options]}${4:, ${5:[window]}${6:, ${7:[title]}${8:, ${9:[text]}}}}})"
+        },
+        "$inrect()": {
+            "prefix": "$inrect()",
+            "body": "\\$inrect(${1:x}, ${2:y}, ${3:x1}, ${4:y1}, ${5:w1}, ${6:h1})"
+        },
+        "$inroundrect()": {
+            "prefix": "$inroundrect()",
+            "body": "\\$inroundrect(${1:x}, ${2:y}, ${3:x1}, ${4:y1}, ${5:w1}, ${6:h1}, ${7:w2}, ${8:h2})"
+        },
+        "$insong": {
+            "prefix": "$insong",
+            "body": "\\$insong"
+        },
+        "$instok()": {
+            "prefix": "$instok()",
+            "body": "\\$instok(${1:text}, ${2:token}, ${3:N}, ${4:C})"
+        },
+        "$int()": {
+            "prefix": "$int()",
+            "body": "\\$int(${1:N})"
+        },
+        "$intersect()": {
+            "prefix": "$intersect()",
+            "body": "\\$intersect(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2}, ${5:x3}, ${6:y3}, ${7:x4}, ${8:y4}${9:, ${10:[method]}})"
+        },
+        "$inwave": {
+            "prefix": "$inwave",
+            "body": "\\$inwave"
+        },
+        "$ip": {
+            "prefix": "$ip",
+            "body": "\\$ip"
+        },
+        "$iptype()": {
+            "prefix": "$iptype()",
+            "body": "\\$iptype(${1:ipaddress})"
+        },
+        "$isalias()": {
+            "prefix": "$isalias()",
+            "body": "\\$isalias(${1:name})"
+        },
+        "$isbit()": {
+            "prefix": "$isbit()",
+            "body": "\\$isbit(${1:A}, ${2:N})"
+        },
+        "$isdde()": {
+            "prefix": "$isdde()",
+            "body": "\\$isdde(${1:name})"
+        },
+        "$isdir()": {
+            "prefix": "$isdir()",
+            "body": "\\$isdir(${1:dirname})"
+        },
+        "$isfile()": {
+            "prefix": "$isfile()",
+            "body": "\\$isfile(${1:filename})"
+        },
+        "$isid": {
+            "prefix": "$isid",
+            "body": "\\$isid)"
+        },
+        "$islower()": {
+            "prefix": "$islower()",
+            "body": "\\$islower(${1:text})"
+        },
+        "$istok()": {
+            "prefix": "$istok()",
+            "body": "\\$istok(${1:text}, ${2:token}, ${3:C})"
+        },
+        "$istokcs()": {
+            "prefix": "$istokcs()",
+            "body": "\\$istokcs(${1:text}, ${2:token}, ${3:C})"
+        },
+        "$isupper()": {
+            "prefix": "$isupper()",
+            "body": "\\$isupper(${1:text})"
+        },
+        "$keychar": {
+            "prefix": "$keychar",
+            "body": "\\$keychar"
+        },
+        "$keyrpt": {
+            "prefix": "$keyrpt",
+            "body": "\\$keyrpt"
+        },
+        "$keyval": {
+            "prefix": "$keyval",
+            "body": "\\$keyval"
+        },
+        "$knick": {
+            "prefix": "$knick",
+            "body": "\\$knick"
+        },
+        "$lactive": {
+            "prefix": "$lactive",
+            "body": "\\$lactive"
+        },
+        "$lactivecid": {
+            "prefix": "$lactivecid",
+            "body": "\\$lactivecid"
+        },
+        "$lactivewid": {
+            "prefix": "$lactivewid",
+            "body": "\\$lactivewid"
+        },
+        "$left()": {
+            "prefix": "$left()",
+            "body": "\\$left(${1:text}, ${2:N})"
+        },
+        "$leftwin": {
+            "prefix": "$leftwin",
+            "body": "\\$leftwin"
+        },
+        "$leftwincid": {
+            "prefix": "$leftwincid",
+            "body": "\\$leftwincid"
+        },
+        "$leftwinwid": {
+            "prefix": "$leftwinwid",
+            "body": "\\$leftwinwid"
+        },
+        "$len()": {
+            "prefix": "$len()",
+            "body": "\\$len(${1:text})"
+        },
+        "$level()": {
+            "prefix": "$level()",
+            "body": "\\$level(${1:address})"
+        },
+        "$lf": {
+            "prefix": "$lf",
+            "body": "\\$lf"
+        },
+        "$line()": {
+            "prefix": "$line()",
+            "body": "\\$line(${1:window}, ${2:N}${3:, ${4:[T = 0]}})"
+        },
+        "$lines()": {
+            "prefix": "$lines()",
+            "body": "\\$lines(${1:filename})"
+        },
+        "$link()": {
+            "prefix": "$link()",
+            "body": "\\$link(${1:N})"
+        },
+        "$lock()": {
+            "prefix": "$lock()",
+            "body": "\\$lock(${1:item|#|N})"
+        },
+        "$locked": {
+            "prefix": "$locked",
+            "body": "\\$locked"
+        },
+        "$log()": {
+            "prefix": "$log()",
+            "body": "\\$log(${1:N})"
+        },
+        "$log10()": {
+            "prefix": "$log10()",
+            "body": "\\$log10(${1:N})"
+        },
+        "$logdir": {
+            "prefix": "$logdir",
+            "body": "\\$logdir"
+        },
+        "$logstamp": {
+            "prefix": "$logstamp",
+            "body": "\\$logstamp"
+        },
+        "$logstampfmt": {
+            "prefix": "$logstampfmt",
+            "body": "\\$logstampfmt"
+        },
+        "$longfn()": {
+            "prefix": "$longfn()",
+            "body": "\\$longfn(${1:filename})"
+        },
+        "$longip()": {
+            "prefix": "$longip()",
+            "body": "\\$longip(${1:ipaddress})"
+        },
+        "$lower()": {
+            "prefix": "$lower()",
+            "body": "\\$lower(${1:text})"
+        },
+        "$ltimer": {
+            "prefix": "$ltimer",
+            "body": "\\$ltimer"
+        },
+        "$maddress": {
+            "prefix": "$maddress",
+            "body": "\\$maddress"
+        },
+        "$mask()": {
+            "prefix": "$mask()",
+            "body": "\\$mask(${1:address}, ${2:type})"
+        },
+        "$matchkey": {
+            "prefix": "$matchkey",
+            "body": "\\$matchkey"
+        },
+        "$matchtok()": {
+            "prefix": "$matchtok()",
+            "body": "\\$matchtok(${1:tokens}, ${2:string}, ${3:N}, ${4:C})"
+        },
+        "$matchtokcs()": {
+            "prefix": "$matchtokcs()",
+            "body": "\\$matchtokcs(${1:tokens}, ${2:string}, ${3:N}, ${4:C})"
+        },
+        "$md5()": {
+            "prefix": "$md5()",
+            "body": "\\$md5(${1:text|filename|&bvar}${2:, ${3:[N = 0]}})"
+        },
+        "$me": {
+            "prefix": "$me",
+            "body": "\\$me"
+        },
+        "$menu": {
+            "prefix": "$menu",
+            "body": "\\$menu"
+        },
+        "$menubar": {
+            "prefix": "$menubar",
+            "body": "\\$menubar"
+        },
+        "$menucontext": {
+            "prefix": "$menucontext",
+            "body": "\\$menucontext"
+        },
+        "$menutype": {
+            "prefix": "$menutype",
+            "body": "\\$menutype"
+        },
+        "$mid()": {
+            "prefix": "$mid()",
+            "body": "\\$mid(${1:text}, ${2:S}, ${3:N})"
+        },
+        "$mididir": {
+            "prefix": "$mididir",
+            "body": "\\$mididir"
+        },
+        "$mircdir": {
+            "prefix": "$mircdir",
+            "body": "\\$mircdir"
+        },
+        "$mircexe": {
+            "prefix": "$mircexe",
+            "body": "\\$mircexe"
+        },
+        "$mircini": {
+            "prefix": "$mircini",
+            "body": "\\$mircini"
+        },
+        "$mkfn()": {
+            "prefix": "$mkfn()",
+            "body": "\\$mkfn(${1:filename})"
+        },
+        "$mklogfn()": {
+            "prefix": "$mklogfn()",
+            "body": "\\$mklogfn(${1:filename})"
+        },
+        "$mknickfn()": {
+            "prefix": "$mknickfn()",
+            "body": "\\$mknickfn(${1:nick})"
+        },
+        "$mnick": {
+            "prefix": "$mnick",
+            "body": "\\$mnick"
+        },
+        "$mode()": {
+            "prefix": "$mode()",
+            "body": "\\$mode(${1:N})"
+        },
+        "$modefirst": {
+            "prefix": "$modefirst",
+            "body": "\\$modefirst"
+        },
+        "$modelast": {
+            "prefix": "$modelast",
+            "body": "\\$modelast"
+        },
+        "$modespl": {
+            "prefix": "$modespl",
+            "body": "\\$modespl"
+        },
+        "$mouse": {
+            "prefix": "$mouse",
+            "body": "\\$mouse"
+        },
+        "$msfile()": {
+            "prefix": "$msfile()",
+            "body": "\\$msfile(${1:dir}${2:, ${3:[title]}${4:, ${5:[oktext]}}})"
+        },
+        "$msgtags": {
+            "prefix": "$msgtags",
+            "body": "\\$msgtags"
+        },
+        "$msgtags()": {
+            "prefix": "$msgtags()",
+            "body": "\\$msgtags(${1:tag|N})"
+        },
+        "$network": {
+            "prefix": "$network",
+            "body": "\\$network"
+        },
+        "$newnick": {
+            "prefix": "$newnick",
+            "body": "\\$newnick"
+        },
+        "$nick": {
+            "prefix": "$nick",
+            "body": "\\$nick"
+        },
+        "$nick()": {
+            "prefix": "$nick()",
+            "body": "\\$nick(${1:#}, ${2:nick|N}, ${3:aohvr}, ${4:aohvr})"
+        },
+        "$nofile()": {
+            "prefix": "$nofile()",
+            "body": "\\$nofile(${1:filename})"
+        },
+        "$nopath()": {
+            "prefix": "$nopath()",
+            "body": "\\$nopath(${1:filename})"
+        },
+        "$noqt()": {
+            "prefix": "$noqt()",
+            "body": "\\$noqt(${1:text})"
+        },
+        "$not()": {
+            "prefix": "$not()",
+            "body": "\\$not(${1:A})"
+        },
+        "$notags()": {
+            "prefix": "$notags()",
+            "body": "\\$notags(${1:text})"
+        },
+        "$notify()": {
+            "prefix": "$notify()",
+            "body": "\\$notify(${1:nick|N})"
+        },
+        "$null": {
+            "prefix": "$null",
+            "body": "\\$null"
+        },
+        "$numeric": {
+            "prefix": "$numeric",
+            "body": "\\$numeric"
+        },
+        "$numtok()": {
+            "prefix": "$numtok()",
+            "body": "\\$numtok(${1:text}, ${2:C})"
+        },
+        "$online": {
+            "prefix": "$online",
+            "body": "\\$online"
+        },
+        "$onpoly()": {
+            "prefix": "$onpoly()",
+            "body": "\\$onpoly(${1:aN}, ${2:bN}, ${3:ax1}, ${4:ay1}, ${5:bx1}, ${6:by1}${7:, ${8:[axN}, ${9:ayN}, ${10:bxN}, ${11:byN]}})"
+        },
+        "$opnick": {
+            "prefix": "$opnick",
+            "body": "\\$opnick)"
+        },
+        "$or()": {
+            "prefix": "$or()",
+            "body": "\\$or(${1:A}, ${2:B})"
+        },
+        "$ord()": {
+            "prefix": "$ord()",
+            "body": "\\$ord(${1:N})"
+        },
+        "$os": {
+            "prefix": "$os",
+            "body": "\\$os)"
+        },
+        "$parseline": {
+            "prefix": "$parseline",
+            "body": "\\$parseline"
+        },
+        "$parsetype": {
+            "prefix": "$parsetype",
+            "body": "\\$parsetype"
+        },
+        "$parseutf": {
+            "prefix": "$parseutf",
+            "body": "\\$parseutf"
+        },
+        "$passivedcc": {
+            "prefix": "$passivedcc",
+            "body": "\\$passivedcc"
+        },
+        "$pi": {
+            "prefix": "$pi",
+            "body": "\\$pi"
+        },
+        "$pic()": {
+            "prefix": "$pic()",
+            "body": "\\$pic(${1:filename})"
+        },
+        "$play()": {
+            "prefix": "$play()",
+            "body": "\\$play(${1:${2:[nick]}, ${3:N}})"
+        },
+        "$pnick": {
+            "prefix": "$pnick",
+            "body": "\\$pnick"
+        },
+        "$port": {
+            "prefix": "$port",
+            "body": "\\$port"
+        },
+        "$portable": {
+            "prefix": "$portable",
+            "body": "\\$portable"
+        },
+        "$pos()": {
+            "prefix": "$pos()",
+            "body": "\\$pos(${1:text}, ${2:string}, ${3:N})"
+        },
+        "$prefix": {
+            "prefix": "$prefix",
+            "body": "\\$prefix"
+        },
+        "$prop": {
+            "prefix": "$prop",
+            "body": "\\$prop"
+        },
+        "$protect": {
+            "prefix": "$protect",
+            "body": "\\$protect"
+        },
+        "$protect()": {
+            "prefix": "$protect()",
+            "body": "\\$protect(${1:address|N})"
+        },
+        "$puttok()": {
+            "prefix": "$puttok()",
+            "body": "\\$puttok(${1:text}, ${2:token}, ${3:N}, ${4:C})"
+        },
+        "$qt()": {
+            "prefix": "$qt()",
+            "body": "\\$qt(${1:text})"
+        },
+        "$query()": {
+            "prefix": "$query()",
+            "body": "\\$query(${1:nick|N})"
+        },
+        "$rand()": {
+            "prefix": "$rand()",
+            "body": "\\$rand(${1:v1}, ${2:v2})"
+        },
+        "$rawbytes": {
+            "prefix": "$rawbytes",
+            "body": "\\$rawbytes"
+        },
+        "$rawmsg": {
+            "prefix": "$rawmsg",
+            "body": "\\$rawmsg"
+        },
+        "$read()": {
+            "prefix": "$read()",
+            "body": "\\$read(${1:filename}${2:, ${3:[ntswrp]}${4:, ${5:[matchtext]}${6:, ${7:[N]}}}})"
+        },
+        "$readini()": {
+            "prefix": "$readini()",
+            "body": "\\$readini(${1:filename}${2:, ${3:[np]}}, ${4:section}, ${5:item})"
+        },
+        "$readn": {
+            "prefix": "$readn",
+            "body": "\\$readn"
+        },
+        "$regex()": {
+            "prefix": "$regex()",
+            "body": "\\$regex(${1:${2:[name]}, ${3:text}}, ${4:re})"
+        },
+        "$regml()": {
+            "prefix": "$regml()",
+            "body": "\\$regml(${1:${2:[name]}, ${3:N}})"
+        },
+        "$regmlex()": {
+            "prefix": "$regmlex()",
+            "body": "\\$regmlex(${1:${2:[name]}, ${3:M}}${4:, ${5:[N = 1]}})"
+        },
+        "$regsub()": {
+            "prefix": "$regsub()",
+            "body": "\\$regsub(${1:${2:[name]}, ${3:text}}, ${4:re}, ${5:subtext}, %${6:var})"
+        },
+        "$regsubex()": {
+            "prefix": "$regsubex()",
+            "body": "\\$regsubex(${1:${2:[name]}, ${3:text}}, ${4:re}, ${5:subtext})"
+        },
+        "$remote": {
+            "prefix": "$remote",
+            "body": "\\$remote"
+        },
+        "$remove()": {
+            "prefix": "$remove()",
+            "body": "\\$remove(${1:string1}, ${2:substring1}${3:, ${4:[substringN]}})"
+        },
+        "$removecs()": {
+            "prefix": "$removecs()",
+            "body": "\\$removecs(${1:string1}, ${2:substring1}${3:, ${4:[substringN]}})"
+        },
+        "$remtok()": {
+            "prefix": "$remtok()",
+            "body": "\\$remtok(${1:text}, ${2:token}, ${3:N}, ${4:C})"
+        },
+        "$remtokcs()": {
+            "prefix": "$remtokcs()",
+            "body": "\\$remtokcs(${1:text}, ${2:token}, ${3:N}, ${4:C})"
+        },
+        "$replace()": {
+            "prefix": "$replace()",
+            "body": "\\$replace(${1:string1}, ${2:substring1}, ${3:newstring1}${4:, ${5:[substringN}, ${6:newstringN]}})"
+        },
+        "$replacecs()": {
+            "prefix": "$replacecs()",
+            "body": "\\$replacecs(${1:string1}, ${2:substring1}, ${3:newstring1}${4:, ${5:[substringN}, ${6:newstringN]}})"
+        },
+        "$replacex()": {
+            "prefix": "$replacex()",
+            "body": "\\$replacex(${1:string1}, ${2:substring1}, ${3:newstring1}${4:, ${5:[substringN}, ${6:newstringN]}})"
+        },
+        "$replacexcs()": {
+            "prefix": "$replacexcs()",
+            "body": "\\$replacexcs(${1:string1}, ${2:substring1}, ${3:newstring1}${4:, ${5:[substringN}, ${6:newstringN]}})"
+        },
+        "$reptok()": {
+            "prefix": "$reptok()",
+            "body": "\\$reptok(${1:text}, ${2:token}, ${3:new}, ${4:N}, ${5:C})"
+        },
+        "$reptokcs()": {
+            "prefix": "$reptokcs()",
+            "body": "\\$reptokcs(${1:text}, ${2:token}, ${3:new}, ${4:N}, ${5:C})"
+        },
+        "$result": {
+            "prefix": "$result",
+            "body": "\\$result"
+        },
+        "$rgb()": {
+            "prefix": "$rgb()",
+            "body": "\\$rgb(${1:name})"
+        },
+        "$rgb()": {
+            "prefix": "$rgb()",
+            "body": "\\$rgb(${1:N}, ${2:N}, ${3:N})"
+        },
+        "$right()": {
+            "prefix": "$right()",
+            "body": "\\$right(${1:text}, ${2:N})"
+        },
+        "$round()": {
+            "prefix": "$round()",
+            "body": "\\$round(${1:N}, ${2:D})"
+        },
+        "$scid()": {
+            "prefix": "$scid()",
+            "body": "\\$scid(${1:N})"
+        },
+        "$scon()": {
+            "prefix": "$scon()",
+            "body": "\\$scon(${1:N})"
+        },
+        "$script": {
+            "prefix": "$script",
+            "body": "\\$script"
+        },
+        "$script()": {
+            "prefix": "$script()",
+            "body": "\\$script(${1:filename|N})"
+        },
+        "$scriptdir": {
+            "prefix": "$scriptdir",
+            "body": "\\$scriptdir"
+        },
+        "$scriptline": {
+            "prefix": "$scriptline",
+            "body": "\\$scriptline"
+        },
+        "$sdir()": {
+            "prefix": "$sdir()",
+            "body": "\\$sdir(${1:dir}${2:, ${3:[title]}})"
+        },
+        "$send()": {
+            "prefix": "$send()",
+            "body": "\\$send(${1:nick|N}${2:, ${3:[N]}})"
+        },
+        "$server": {
+            "prefix": "$server",
+            "body": "\\$server"
+        },
+        "$serverip": {
+            "prefix": "$serverip",
+            "body": "\\$serverip"
+        },
+        "$servertarget": {
+            "prefix": "$servertarget",
+            "body": "\\$servertarget"
+        },
+        "$sfile()": {
+            "prefix": "$sfile()",
+            "body": "\\$sfile(${1:dir}${2:, ${3:[title]}${4:, ${5:[oktext]}}})"
+        },
+        "$sha1()": {
+            "prefix": "$sha1()",
+            "body": "\\$sha1(${1:text|filename|&bvar}${2:, ${3:[N]}})"
+        },
+        "$shortfn()": {
+            "prefix": "$shortfn()",
+            "body": "\\$shortfn(${1:filename})"
+        },
+        "$show": {
+            "prefix": "$show",
+            "body": "\\$show"
+        },
+        "$signal": {
+            "prefix": "$signal",
+            "body": "\\$signal"
+        },
+        "$sin()": {
+            "prefix": "$sin()",
+            "body": "\\$sin(${1:N})"
+        },
+        "$site": {
+            "prefix": "$site",
+            "body": "\\$site"
+        },
+        "$sline()": {
+            "prefix": "$sline()",
+            "body": "\\$sline(@${1:window}, ${2:N})"
+        },
+        "$snick()": {
+            "prefix": "$snick()",
+            "body": "\\$snick(${1:#}${2:, ${3:[N]}})"
+        },
+        "$snicks": {
+            "prefix": "$snicks",
+            "body": "\\$snicks"
+        },
+        "$snotify": {
+            "prefix": "$snotify",
+            "body": "\\$snotify"
+        },
+        "$sock()": {
+            "prefix": "$sock()",
+            "body": "\\$sock(${1:name}${2:, ${3:[N = 1]}})"
+        },
+        "$sockbr": {
+            "prefix": "$sockbr",
+            "body": "\\$sockbr"
+        },
+        "$sockerr": {
+            "prefix": "$sockerr",
+            "body": "\\$sockerr"
+        },
+        "$sockname": {
+            "prefix": "$sockname",
+            "body": "\\$sockname"
+        },
+        "$sorttok()": {
+            "prefix": "$sorttok()",
+            "body": "\\$sorttok(${1:text}, ${2:C}${3:, ${4:[ncra]}})"
+        },
+        "$sorttokcs()": {
+            "prefix": "$sorttokcs()",
+            "body": "\\$sorttokcs(${1:text}, ${2:C}${3:, ${4:[ncra]}})"
+        },
+        "$sound()": {
+            "prefix": "$sound()",
+            "body": "\\$sound(${1:type})"
+        },
+        "$speak()": {
+            "prefix": "$speak()",
+            "body": "\\$speak(${1:N})"
+        },
+        "$sqrt()": {
+            "prefix": "$sqrt()",
+            "body": "\\$sqrt(${1:N})"
+        },
+        "$sreq": {
+            "prefix": "$sreq",
+            "body": "\\$sreq"
+        },
+        "$ssl": {
+            "prefix": "$ssl",
+            "body": "\\$ssl"
+        },
+        "$ssldll": {
+            "prefix": "$ssldll",
+            "body": "\\$ssldll"
+        },
+        "$ssllibdll": {
+            "prefix": "$ssllibdll",
+            "body": "\\$ssllibdll"
+        },
+        "$sslready": {
+            "prefix": "$sslready",
+            "body": "\\$sslready"
+        },
+        "$sslversion": {
+            "prefix": "$sslversion",
+            "body": "\\$sslversion"
+        },
+        "$status": {
+            "prefix": "$status",
+            "body": "\\$status"
+        },
+        "$str()": {
+            "prefix": "$str()",
+            "body": "\\$str(${1:text}, ${2:N})"
+        },
+        "$strip()": {
+            "prefix": "$strip()",
+            "body": "\\$strip(${1:text}, ${2:burcmo})"
+        },
+        "$stripped": {
+            "prefix": "$stripped",
+            "body": "\\$stripped"
+        },
+        "$style()": {
+            "prefix": "$style()",
+            "body": "\\$style(${1:N})"
+        },
+        "$submenu()": {
+            "prefix": "$submenu()",
+            "body": "\\$submenu(${1:\\$id(\\$1)})"
+        },
+        "$switchbar": {
+            "prefix": "$switchbar",
+            "body": "\\$switchbar"
+        },
+        "$tan()": {
+            "prefix": "$tan()",
+            "body": "\\$tan(${1:N})"
+        },
+        "$tanh()": {
+            "prefix": "$tanh()",
+            "body": "\\$tanh(${1:N})"
+        },
+        "$target": {
+            "prefix": "$target",
+            "body": "\\$target"
+        },
+        "$ticks": {
+            "prefix": "$ticks",
+            "body": "\\$ticks"
+        },
+        "$time": {
+            "prefix": "$time",
+            "body": "\\$time"
+        },
+        "$timer()": {
+            "prefix": "$timer()",
+            "body": "\\$timer(${1:name|N})"
+        },
+        "$timestamp": {
+            "prefix": "$timestamp",
+            "body": "\\$timestamp"
+        },
+        "$timestampfmt": {
+            "prefix": "$timestampfmt",
+            "body": "\\$timestampfmt"
+        },
+        "$timezone": {
+            "prefix": "$timezone",
+            "body": "\\$timezone"
+        },
+        "$tip()": {
+            "prefix": "$tip()",
+            "body": "\\$tip(${1:name}, ${2:title}, ${3:text}${4:, ${5:[delay|\\$null}${6:, ${7:[iconfn|\\$null}${8:, ${9:[iconpos|\\$null}${10:, ${11:[alias|\\$null}${12:, ${13:[wid|\\$null]]]]]}}}}}})"
+        },
+        "$tip()": {
+            "prefix": "$tip()",
+            "body": "\\$tip(${1:name|N})"
+        },
+        "$tips": {
+            "prefix": "$tips",
+            "body": "\\$tips"
+        },
+        "$titlebar": {
+            "prefix": "$titlebar",
+            "body": "\\$titlebar"
+        },
+        "$toolbar": {
+            "prefix": "$toolbar",
+            "body": "\\$toolbar"
+        },
+        "$toolbar()": {
+            "prefix": "$toolbar()",
+            "body": "\\$toolbar(${1:name|N})"
+        },
+        "$treebar": {
+            "prefix": "$treebar",
+            "body": "\\$treebar"
+        },
+        "$trust()": {
+            "prefix": "$trust()",
+            "body": "\\$trust(${1:N})"
+        },
+        "$ulevel": {
+            "prefix": "$ulevel",
+            "body": "\\$ulevel"
+        },
+        "$ulist()": {
+            "prefix": "$ulist()",
+            "body": "\\$ulist(${1:address}${2:, ${3:[L}, ${4:N]}})"
+        },
+        "$upper()": {
+            "prefix": "$upper()",
+            "body": "\\$upper(${1:text})"
+        },
+        "$uptime()": {
+            "prefix": "$uptime()",
+            "body": "\\$uptime(${1:mirc|server|system}${2:, ${3:[N]}})"
+        },
+        "$url": {
+            "prefix": "$url",
+            "body": "\\$url"
+        },
+        "$url()": {
+            "prefix": "$url()",
+            "body": "\\$url(${1:N})"
+        },
+        "$usermode": {
+            "prefix": "$usermode",
+            "body": "\\$usermode"
+        },
+        "$v1": {
+            "prefix": "$v1",
+            "body": "\\$v1"
+        },
+        "$v2": {
+            "prefix": "$v2",
+            "body": "\\$v2"
+        },
+        "$var()": {
+            "prefix": "$var()",
+            "body": "\\$var(%${1:var}, ${2:N})"
+        },
+        "$vcmd()": {
+            "prefix": "$vcmd()",
+            "body": "\\$vcmd(${1:N})"
+        },
+        "$vcmdstat": {
+            "prefix": "$vcmdstat",
+            "body": "\\$vcmdstat"
+        },
+        "$vcmdver": {
+            "prefix": "$vcmdver",
+            "body": "\\$vcmdver"
+        },
+        "$version": {
+            "prefix": "$version",
+            "body": "\\$version"
+        },
+        "$wid": {
+            "prefix": "$wid",
+            "body": "\\$wid"
+        },
+        "$width()": {
+            "prefix": "$width()",
+            "body": "\\$width(${1:text}, ${2:font}, ${3:size}${4:, ${5:[B = 0]}${6:, ${7:[C = 0]}}})"
+        },
+        "$wildsite": {
+            "prefix": "$wildsite",
+            "body": "\\$wildsite"
+        },
+        "$wildtok()": {
+            "prefix": "$wildtok()",
+            "body": "\\$wildtok(${1:tokens}, ${2:wildstring}, ${3:N}, ${4:C})"
+        },
+        "$wildtokcs()": {
+            "prefix": "$wildtokcs()",
+            "body": "\\$wildtokcs(${1:tokens}, ${2:wildstring}, ${3:N}, ${4:C})"
+        },
+        "$window": {
+            "prefix": "$window",
+            "body": "\\$window"
+        },
+        "$window()": {
+            "prefix": "$window()",
+            "body": "\\$window(${1:window|N}${2:, ${3:[N]}})"
+        },
+        "$vnick": {
+            "prefix": "$vnick",
+            "body": "\\$vnick"
+        },
+        "$vol()": {
+            "prefix": "$vol()",
+            "body": "\\$vol(${1:wave|midi|song|master})"
+        },
+        "$wrap()": {
+            "prefix": "$wrap()",
+            "body": "\\$wrap(${1:text}, ${2:font}, ${3:size}, ${4:width}${5:, ${6:[word = 1]}}, ${7:N})"
+        },
+        "$xor()": {
+            "prefix": "$xor()",
+            "body": "\\$xor(${1:A}, ${2:B})"
+        }
+    }
+}

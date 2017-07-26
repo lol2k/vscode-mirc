@@ -1,0 +1,292 @@
+{
+    "source.mrc": {
+        "on ACTION": {
+            "prefix": "on ACTION",
+            "body": "on ${1:*}:ACTION:${2:*}:${3:*}: {\n\t${0:}\n}"
+        },
+        "on ACTIVE": {
+            "prefix": "on ACTIVE",
+            "body": "on ${1:*}:ACTIVE:${2:*}: {\n\t${0:}\n}"
+        },
+        "on AGENT": {
+            "prefix": "on AGENT",
+            "body": "on ${1:*}:AGENT: {\n\t${0:}\n}"
+        },
+        "on APPACTIVE": {
+            "prefix": "on APPACTIVE",
+            "body": "on ${1:*}:APPACTIVE:${2:*}: {\n\t${0:}\n}"
+        },
+        "on BAN": {
+            "prefix": "on BAN",
+            "body": "on ${1:*}:BAN:${2:#}: {\n\t${0:}\n}"
+        },
+        "on CHAT": {
+            "prefix": "on CHAT",
+            "body": "on ${1:*}:CHAT:${2:*}: {\n\t${0:}\n}"
+        },
+        "on CLOSE": {
+            "prefix": "on CLOSE",
+            "body": "on ${1:*}:CLOSE:${2:*}:${3:*}: {\n\t${0:}\n}"
+        },
+        "on CONNECT": {
+            "prefix": "on CONNECT",
+            "body": "on ${1:*}:CONNECT: {\n\t${0:}\n}"
+        },
+        "on CONNECTFAIL": {
+            "prefix": "on CONNECTFAIL",
+            "body": "on ${1:*}:CONNECTFAIL: {\n\t${0:}\n}"
+        },
+        "on CTCPREPLY": {
+            "prefix": "on CTCPREPLY",
+            "body": "on ${1:*}:CTCPREPLY:${2:*}: {\n\t${0:}\n}"
+        },
+        "on DCCSERVER": {
+            "prefix": "on DCCSERVER",
+            "body": "on ${1:*}:DCCSERVER:${2:Chat|Send|Fserve}: {\n\t${0:}\n}"
+        },
+        "on DEHELP": {
+            "prefix": "on DEHELP",
+            "body": "on ${1:*}:DEHELP:${2:#}: {\n\t${0:}\n}"
+        },
+        "on DEVOICE": {
+            "prefix": "on DEVOICE",
+            "body": "on ${1:*}:DEVOICE:${2:#}: {\n\t${0:}\n}"
+        },
+        "on DEOP": {
+            "prefix": "on DEOP",
+            "body": "on ${1:*}:DEOP:${2:#}: {\n\t${0:}\n}"
+        },
+        "on DIALOG": {
+            "prefix": "on DIALOG",
+            "body": "on ${1:*}:DIALOG:${2:name}:${3:event}:${4:id}: {\n\t${0:}\n}"
+        },
+        "on DISCONNECT": {
+            "prefix": "on DISCONNECT",
+            "body": "on ${1:*}:DISCONNECT: {\n\t${0:}\n}"
+        },
+        "on DNS": {
+            "prefix": "on DNS",
+            "body": "on ${1:*}:DNS: {\n\t${0:}\n}"
+        },
+        "on ERROR": {
+            "prefix": "on ERROR",
+            "body": "on ${1:*}:ERROR:${2:*}: {\n\t${0:}\n}"
+        },
+        "on EXIT": {
+            "prefix": "on EXIT",
+            "body": "on ${1:*}:EXIT: {\n\t${0:}\n}"
+        },
+        "on FILERCVD": {
+            "prefix": "on FILERCVD",
+            "body": "on ${1:*}:FILERCVD:${2:filename}: {\n\t${0:}\n}"
+        },
+        "on FILESENT": {
+            "prefix": "on FILESENT",
+            "body": "on ${1:*}:FILESENT:${2:filename}: {\n\t${0:}\n}"
+        },
+        "on GETFAIL": {
+            "prefix": "on GETFAIL",
+            "body": "on ${1:*}:GETFAIL:${2:filename}: {\n\t${0:}\n}"
+        },
+        "on HELP": {
+            "prefix": "on HELP",
+            "body": "on ${1:*}:HELP:${2:#}: {\n\t${0:}\n}"
+        },
+        "on HOTLINK": {
+            "prefix": "on HOTLINK",
+            "body": "on ${1:*}:HOTLINK:${2:*}:${3:*}: {\n\t${0:}\n}"
+        },
+        "on INPUT": {
+            "prefix": "on INPUT",
+            "body": "on ${1:*}:INPUT:${2:*}: {\n\t${0:}\n}"
+        },
+        "on INVITE": {
+            "prefix": "on INVITE",
+            "body": "on ${1:*}:INVITE:${2:#}: {\n\t${0:}\n}"
+        },
+        "on JOIN": {
+            "prefix": "on JOIN",
+            "body": "on ${1:*}:JOIN:${2:#}: {\n\t${0:}\n}"
+        },
+        "on KEYDOWN": {
+            "prefix": "on KEYDOWN",
+            "body": "on ${1:*}:KEYDOWN:${2:@}:${3:key}: {\n\t${0:}\n}"
+        },
+        "on KEYUP": {
+            "prefix": "on KEYUP",
+            "body": "on ${1:*}:KEYUP:${2:@}:${3:key}: {\n\t${0:}\n}"
+        },
+        "on KICK": {
+            "prefix": "on KICK",
+            "body": "on ${1:*}:KICK:${2:#}: {\n\t${0:}\n}"
+        },
+        "on LOAD": {
+            "prefix": "on LOAD",
+            "body": "on ${1:*}:LOAD: {\n\t${0:}\n}"
+        },
+        "on LOGON": {
+            "prefix": "on LOGON",
+            "body": "on ${1:*}:LOGON:*: {\n\t${0:}\n}"
+        },
+        "on MIDIEND": {
+            "prefix": "on MIDIEND",
+            "body": "on ${1:*}:MIDIEND: {\n\t${0:}\n}"
+        },
+        "on MODE": {
+            "prefix": "on MODE",
+            "body": "on ${1:*}:MODE:${2:#}: {\n\t${0:}\n}"
+        },
+        "on MP3END": {
+            "prefix": "on MP3END",
+            "body": "on ${1:*}:MP3END: {\n\t${0:}\n}"
+        },
+        "on NICK": {
+            "prefix": "on NICK",
+            "body": "on ${1:*}:NICK: {\n\t${0:}\n}"
+        },
+        "on NOSOUND": {
+            "prefix": "on NOSOUND",
+            "body": "on ${1:*}:NOSOUND: {\n\t${0:}\n}"
+        },
+        "on NOTICE": {
+            "prefix": "on NOTICE",
+            "body": "on ${1:*}:NOTICE:${2:*}:${3:*}: {\n\t${0:}\n}"
+        },
+        "on NOTIFY": {
+            "prefix": "on NOTIFY",
+            "body": "on ${1:*}:NOTIFY: {\n\t${0:}\n}"
+        },
+        "on OP": {
+            "prefix": "on OP",
+            "body": "on ${1:*}:OP:${2:#}: {\n\t${0:}\n}"
+        },
+        "on OPEN": {
+            "prefix": "on OPEN",
+            "body": "on ${1:*}:OPEN:${2:*}:${3:*}: {\n\t${0:}\n}"
+        },
+        "on PARSELINE": {
+            "prefix": "on PARSELINE",
+            "body": "on ${1:*}:PARSELINE:${2:in|out|*}:${3:*}: {\n\t${0:}\n}"
+        },
+        "on PART": {
+            "prefix": "on PART",
+            "body": "on ${1:*}:PART:${2:#}: {\n\t${0:}\n}"
+        },
+        "on PING": {
+            "prefix": "on PING",
+            "body": "on ${1:*}:PING: {\n\t${0:}\n}"
+        },
+        "on PLAYEND": {
+            "prefix": "on PLAYEND",
+            "body": "on ${1:*}:PLAYEND: {\n\t${0:}\n}"
+        },
+        "on PONG": {
+            "prefix": "on PONG",
+            "body": "on ${1:*}:PONG: {\n\t${0:}\n}"
+        },
+        "on QUIT": {
+            "prefix": "on QUIT",
+            "body": "on ${1:*}:QUIT: {\n\t${0:}\n}"
+        },
+        "on RAWMODE": {
+            "prefix": "on RAWMODE",
+            "body": "on ${1:*}:RAWMODE:${2:#}: {\n\t${0:}\n}"
+        },
+        "on SENDFAIL": {
+            "prefix": "on SENDFAIL",
+            "body": "on ${1:*}:SENDFAIL:${2:filename}: {\n\t${0:}\n}"
+        },
+        "on SERV": {
+            "prefix": "on SERV",
+            "body": "on ${1:*}:SERV:${2:*}: {\n\t${0:}\n}"
+        },
+        "on SERVERMODE": {
+            "prefix": "on SERVERMODE",
+            "body": "on ${1:*}:SERVERMODE:${2:#}: {\n\t${0:}\n}"
+        },
+        "on SERVEROP": {
+            "prefix": "on SERVEROP",
+            "body": "on ${1:*}:SERVEROP:${2:#}: {\n\t${0:}\n}"
+        },
+        "on SIGNAL": {
+            "prefix": "on SIGNAL",
+            "body": "on ${1:*}:SIGNAL:${2:name}: {\n\t${0:}\n}"
+        },
+        "on SNOTICE": {
+            "prefix": "on SNOTICE",
+            "body": "on ${1:*}:SNOTICE:${2:*}: {\n\t${0:}\n}"
+        },
+        "on SOCKCLOSE": {
+            "prefix": "on SOCKCLOSE",
+            "body": "on ${1:*}:SOCKCLOSE:${2:name}: {\n\t${0:}\n}"
+        },
+        "on SOCKLISTEN": {
+            "prefix": "on SOCKLISTEN",
+            "body": "on ${1:*}:SOCKLISTEN:${2:name}: {\n\t${0:}\n}"
+        },
+        "on SOCKOPEN": {
+            "prefix": "on SOCKOPEN",
+            "body": "on ${1:*}:SOCKOPEN:${2:name}: {\n\t${0:}\n}"
+        },
+        "on SOCKREAD": {
+            "prefix": "on SOCKREAD",
+            "body": "on ${1:*}:SOCKREAD:${2:name}: {\n\t${0:}\n}"
+        },
+        "on SOCKWRITE": {
+            "prefix": "on SOCKWRITE",
+            "body": "on ${1:*}:SOCKWRITE:${2:name}: {\n\t${0:}\n}"
+        },
+        "on START": {
+            "prefix": "on START",
+            "body": "on ${1:*}:START: {\n\t${0:}\n}"
+        },
+        "on TABCOMP": {
+            "prefix": "on TABCOMP",
+            "body": "on ${1:*}:TABCOMP:${2:*}: {\n\t${0:}\n}"
+        },
+        "on TEXT": {
+            "prefix": "on TEXT",
+            "body": "on ${1:*}:TEXT:${2:*}:${3:*}: {\n\t${0:}\n}"
+        },
+        "on TOPIC": {
+            "prefix": "on TOPIC",
+            "body": "on ${1:*}:TOPIC:${2:#}: {\n\t${0:}\n}"
+        },
+        "on UDPREAD": {
+            "prefix": "on UDPREAD",
+            "body": "on ${1:*}:UDPREAD:${2:name}: {\n\t${0:}\n}"
+        },
+        "on UNBAN": {
+            "prefix": "on UNBAN",
+            "body": "on ${1:*}:UNBAN:${2:#}: {\n\t${0:}\n}"
+        },
+        "on UNLOAD": {
+            "prefix": "on UNLOAD",
+            "body": "on ${1:*}:UNLOAD: {\n\t${0:}\n}"
+        },
+        "on UNOTIFY": {
+            "prefix": "on UNOTIFY",
+            "body": "on ${1:*}:UNOTIFY: {\n\t${0:}\n}"
+        },
+        "on USERMODE": {
+            "prefix": "on USERMODE",
+            "body": "on ${1:*}:USERMODE: {\n\t${0:}\n}"
+        },
+        "on WALLOPS": {
+            "prefix": "on WALLOPS",
+            "body": "on ${1:*}:WALLOPS:${2:*}: {\n\t${0:}\n}"
+        },
+        "on WAVEEND": {
+            "prefix": "on WAVEEND",
+            "body": "on ${1:*}:WAVEEND: {\n\t${0:}\n}"
+        },
+        "on VCMD": {
+            "prefix": "on VCMD",
+            "body": "on ${1:*}:VCMD:${2:*}: {\n\t${0:}\n}"
+        },
+        "on VOICE": {
+            "prefix": "on VOICE",
+            "body": "on ${1:*}:VOICE:${2:#}: {\n\t${0:}\n}"
+        }
+    }
+}

@@ -1,0 +1,100 @@
+{
+    "meta.conditional.statement.mrc": {
+        "isin": {
+            "prefix": "isin",
+            "body": "isin"
+        },
+        "isincs": {
+            "prefix": "isincs",
+            "body": "isincs"
+        },
+        "iswm": {
+            "prefix": "iswm",
+            "body": "iswm"
+        },
+        "iswmcs": {
+            "prefix": "iswmcs",
+            "body": "iswmcs"
+        },
+        "isnum": {
+            "prefix": "isnum",
+            "body": "isnum"
+        },
+        "isletter": {
+            "prefix": "isletter",
+            "body": "isletter"
+        },
+        "isalnum": {
+            "prefix": "isalnum",
+            "body": "isalnum"
+        },
+        "isalpha": {
+            "prefix": "isalpha",
+            "body": "isalpha"
+        },
+        "islower": {
+            "prefix": "islower",
+            "body": "islower"
+        },
+        "isupper": {
+            "prefix": "isupper",
+            "body": "isupper"
+        },
+        "ison": {
+            "prefix": "ison",
+            "body": "ison"
+        },
+        "isop": {
+            "prefix": "isop",
+            "body": "isop"
+        },
+        "ishop": {
+            "prefix": "ishop",
+            "body": "ishop"
+        },
+        "isvoice": {
+            "prefix": "isvoice",
+            "body": "isvoice"
+        },
+        "isreg": {
+            "prefix": "isreg",
+            "body": "isreg"
+        },
+        "ischan": {
+            "prefix": "ischan",
+            "body": "ischan"
+        },
+        "isban": {
+            "prefix": "isban",
+            "body": "isban"
+        },
+        "isinvite": {
+            "prefix": "isinvite",
+            "body": "isinvite"
+        },
+        "isexcept": {
+            "prefix": "isexcept",
+            "body": "isexcept"
+        },
+        "isaop": {
+            "prefix": "isaop",
+            "body": "isaop"
+        },
+        "isavoice": {
+            "prefix": "isavoice",
+            "body": "isavoice"
+        },
+        "isignore": {
+            "prefix": "isignore",
+            "body": "isignore"
+        },
+        "isprotect": {
+            "prefix": "isprotect",
+            "body": "isprotect"
+        },
+        "isnotify": {
+            "prefix": "isnotify",
+            "body": "isnotify"
+        }
+    }
+}

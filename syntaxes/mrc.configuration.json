@@ -1,0 +1,33 @@
+{
+	"comments": {
+		// symbol used for single line comment. Remove this entry if your language does not support line comments
+		"lineComment": ";",
+		// symbols used for start and end a block comment. Remove this entry if your language does not support block comments
+		"blockComment": [ "/*", "*/" ]
+	},
+	// symbols used as brackets
+    "brackets": [
+		["{", "}"],
+    	["[", "]"],
+		["(", ")"]
+    ],
+    // symbols that are auto closed when typing
+    "autoClosingPairs": [
+		["{", "}"],
+        ["[", "]"],
+        ["(", ")"],
+        ["\"", "\""]
+    ],
+    // symbols that that can be used to surround a selection
+    "surroundingPairs": [
+        ["{", "}"],
+        ["[", "]"],
+        ["(", ")"],
+        ["\"", "\""]
+	],
+	// auto indentation rules (regex)  --  brackets are auto-indented regardless of these rules -- this seems to not match at all, a single { on a line indents lines below
+	"indentationRules": {
+		"increaseIndentPattern": "(?:^|\\s)(?:if|else(?:if)?|while|alias|dialog|menu|on)\\s.*?{\\s*$",
+		"decreaseIndentPattern": "^\\s*}"
+	}
+}

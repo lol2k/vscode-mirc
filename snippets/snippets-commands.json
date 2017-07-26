@@ -1,0 +1,988 @@
+{
+    "source.mrc": {
+        "abook": {
+            "prefix": "abook",
+            "body": "abook ${1:[-wnclh|nick]}"
+        },
+        "ajinvite": {
+            "prefix": "ajinvite",
+            "body": "ajinvite ${1:[on|off]}"
+        },
+        "alias": {
+            "prefix": "alias",
+            "body": "alias ${1:[filename]} ${2:aliasname} ${3:command}"
+        },
+        "aline": {
+            "prefix": "aline",
+            "body": "aline ${1:[-sahpinl]} ${2:[c]} @${3:window} ${4:text}"
+        },
+        "ame": {
+            "prefix": "ame",
+            "body": "ame ${1:message}"
+        },
+        "amsg": {
+            "prefix": "amsg",
+            "body": "amsg ${1:message}"
+        },
+        "anick": {
+            "prefix": "anick",
+            "body": "anick ${1:nick}"
+        },
+        "aop": {
+            "prefix": "aop",
+            "body": "aop ${1:[-rw]} ${2:on|off|nick|address} ${3:[#chan1,#chanN]} ${4:[type]} ${5:[network]}"
+        },
+        "auser": {
+            "prefix": "auser",
+            "body": "auser ${1:[-a]} ${2:levels} ${3:nick|address} ${4:[info]}"
+        },
+        "autojoin": {
+            "prefix": "autojoin",
+            "body": "autojoin ${1:[-nsdN]}"
+        },
+        "away": {
+            "prefix": "away",
+            "body": "away ${1:[message]}"
+        },
+        "avoice": {
+            "prefix": "avoice",
+            "body": "avoice ${1:[-rw]} ${2:on|off|nick|address} ${3:[#chan1,#chanN]} ${4:[type]} ${5:[network]}"
+        },
+        "background": {
+            "prefix": "background",
+            "body": "background${1:[-abemsgdluhcfnrtpx]} ${2:[window]} ${3:[filename]}"
+        },
+        "ban": {
+            "prefix": "ban",
+            "body": "ban ${1:[-kruN]} ${2:[#chan]} ${3:nick|address} ${4:[type]}"
+        },
+        "bcopy": {
+            "prefix": "bcopy",
+            "body": "bcopy ${1:[-zc]} &${2:tgtbvar} ${3:tgtpos} &${4:srcbvar} ${5:srcpos} ${6:bytes}"
+        },
+        "beep": {
+            "prefix": "beep",
+            "body": "beep ${1:N} ${2:delay}"
+        },
+        "bindip": {
+            "prefix": "bindip",
+            "body": "bindip ${1:[on|off]} ${2:ipaddress}"
+        },
+        "bread": {
+            "prefix": "bread",
+            "body": "bread ${1:[-t]} ${2:filename} ${3:pos} ${4:bytes} &${5:bvar}"
+        },
+        "break": {
+            "prefix": "break",
+            "body": "break"
+        },
+        "breplace": {
+            "prefix": "breplace",
+            "body": "breplace &${1:bvar} ${2:oldval} ${3:newval}${4: ${5:[oldvalN} ${6:newvalN]}}"
+        },
+        "bset": {
+            "prefix": "bset",
+            "body": "bset ${1:[-t]} &${2:bvar} ${3:pos} ${4:asciival} ${5:[asciivalN]}"
+        },
+        "btrunc": {
+            "prefix": "btrunc",
+            "body": "btrunc ${1:filename} ${2:bytes}"
+        },
+        "bunset": {
+            "prefix": "bunset",
+            "body": "bunset &${1:bvar} ${2:[&bvarN]}"
+        },
+        "bwrite": {
+            "prefix": "bwrite",
+            "body": "bwrite ${1:[-t]} ${2:filename} ${3:pos} ${4:[bytes]} ${5:text|%var|&bvar}"
+        },
+        "channel": {
+            "prefix": "channel",
+            "body": "channel ${1:[#chan]}"
+        },
+        "clear": {
+            "prefix": "clear",
+            "body": "clear ${1:[-sghlc]} ${2:[window]}"
+        },
+        "clearall": {
+            "prefix": "clearall",
+            "body": "clearall ${1:[-snqmtgua]}"
+        },
+        "cline": {
+            "prefix": "cline",
+            "body": "cline ${1:[-hrml]} ${2:[c]} @${3:window} ${4:N}"
+        },
+        "clipboard": {
+            "prefix": "clipboard",
+            "body": "clipboard ${1:[-an]} ${2:text}"
+        },
+        "close": {
+            "prefix": "close",
+            "body": "close ${1:[-axic[N]f[N]g[N]s[N]mdtlknu@]} ${3:[nick|window]} ${4:[nickN|windowN]}"
+        },
+        "cnick": {
+            "prefix": "cnick",
+            "body": "cnick ${1:[-rfaniovpylNmNsN]} ${2:[on|off|nick|address]} ${3:[color]} ${4:[modes]} ${5:[levels]}"
+        },
+        "color": {
+            "prefix": "color",
+            "body": "color ${1:[-lrs]} ${2:name} ${3:index}"
+        },
+        "comclose": {
+            "prefix": "comclose",
+            "body": "comclose ${1:name}"
+        },
+        "comlist": {
+            "prefix": "comlist",
+            "body": "comlist"
+        },
+        "comopen": {
+            "prefix": "comopen",
+            "body": "comopen ${1:name} ${2:progid}"
+        },
+        "comreg": {
+            "prefix": "comreg",
+            "body": "comreg ${1:[-u]} ${2:filename}"
+        },
+        "continue": {
+            "prefix": "continue",
+            "body": "continue"
+        },
+        "copy": {
+            "prefix": "copy",
+            "body": "copy ${1:[-ao]} ${2:filename} ${3:filename|dir}"
+        },
+        "creq": {
+            "prefix": "creq",
+            "body": "creq ${1:[+/-m]} ${2:[ask|auto|ignore]}"
+        },
+        "ctcpreply": {
+            "prefix": "ctcpreply",
+            "body": "ctcpreply ${1:nick} ${2:ctcp} ${3:[message]}"
+        },
+        "ctcps": {
+            "prefix": "ctcps",
+            "body": "ctcps ${1:[on|off]}"
+        },
+        "dcc chat": {
+            "prefix": "dcc chat",
+            "body": "dcc chat ${1:nick}"
+        },
+        "dcc get": {
+            "prefix": "dcc get",
+            "body": "dcc get ${1:dir}"
+        },
+        "dcc ignore": {
+            "prefix": "dcc ignore",
+            "body": "dcc ignore ${1:[on|off|accept|ignore]}"
+        },
+        "dcc nick": {
+            "prefix": "dcc nick",
+            "body": "dcc nick -${1:sgcf} ${2:oldnick} ${3:newnick}"
+        },
+        "dcc passive": {
+            "prefix": "dcc passive",
+            "body": "dcc passive ${1:[on|off]}"
+        },
+        "dcc reject": {
+            "prefix": "dcc reject",
+            "body": "dcc reject"
+        },
+        "dcc send": {
+            "prefix": "dcc send",
+            "body": "dcc send ${1:[-clmn]}} ${2:nick} ${3:file} ${4:fileN}"
+        },
+        "dcc trust": {
+            "prefix": "dcc trust",
+            "body": "dcc trust ${1:[-r]} ${2:on|off|nick|address|level}"
+        },
+        "dccserver": {
+            "prefix": "dccserver",
+            "body": "dccserver ${1:[+/-scf]} ${2:[on|off]} ${3:[port]}"
+        },
+        "dde": {
+            "prefix": "dde",
+            "body": "dde ${1:[-re]}} ${2:service} ${3:topic} ${4:item} ${5:[data]}"
+        },
+        "ddeserver": {
+            "prefix": "ddeserver",
+            "body": "ddeserver ${1:[on [service]|off]}"
+        },
+        "debug": {
+            "prefix": "debug",
+            "body": "debug ${1:[-cinpt]} ${2:[N]} ${3:[on|off|@window|filename]} ${4:[identifier]}"
+        },
+        "dec": {
+            "prefix": "dec",
+            "body": "dec ${1:[-cszeuN]} %${2:var} ${3:[value]}"
+        },
+        "describe": {
+            "prefix": "describe",
+            "body": "describe ${1:nick|#chan} ${2:message}"
+        },
+        "dialog": {
+            "prefix": "dialog",
+            "body": "dialog -${1:mdtsonkcvie} ${2:name} ${3:[table]} ${4:${5:[[x]} ${6:[y]} ${7:[w]} ${8:[h]]}} ${9:[text]}"
+        },
+        "did": {
+            "prefix": "did",
+            "body": "did -${1:ftebvhnmcukradiogjsl} ${2:name} ${3:id[-id][,idN[-idN]]} ${4:[N]} ${5:[text|filename]}"
+        },
+        "didtok": {
+            "prefix": "didtok",
+            "body": "didtok ${1:name} ${2:id} ${3:C} ${4:text}"
+        },
+        "disable": {
+            "prefix": "disable",
+            "body": "disable #${1:group} ${2:[#groupN]}"
+        },
+        "disconnect": {
+            "prefix": "disconnect",
+            "body": "disconnect"
+        },
+        "dlevel": {
+            "prefix": "dlevel",
+            "body": "dlevel ${1:level}"
+        },
+        "dline": {
+            "prefix": "dline",
+            "body": "dline ${1:[-hl]} @${2:window} ${3:N}"
+        },
+        "dll": {
+            "prefix": "dll",
+            "body": "dll ${1:filename}} ${2:procname} ${3:[data]}"
+        },
+        "dns": {
+            "prefix": "dns",
+            "body": "dns ${1:[-46ch]} ${2:[nick|address]}"
+        },
+        "dqwindow": {
+            "prefix": "dqwindow",
+            "body": "dqwindow ${1:[on|off|show|hide|min]}"
+        },
+        "drawcopy": {
+            "prefix": "drawcopy",
+            "body": "drawcopy ${1:[-ihmnt]} @${2:srcwindow} ${3:[color]} ${4:x} ${5:y} ${6:w} ${7:h} @${8:tgtwindow} ${9:x} ${10:y} ${11:${12:[w} ${13:h]}}"
+        },
+        "drawdot": {
+            "prefix": "drawdot",
+            "body": "drawdot ${1:[-ihnr]} @${2:window} ${3:color} ${4:size} ${5:x} ${6:y} ${7:${8:[xN} ${9:yN]}}"
+        },
+        "drawfill": {
+            "prefix": "drawfill",
+            "body": "drawfill ${1:[-ihnrs]} @${2:window} ${3:color} ${4:color} ${5:x} ${6:y} ${7:[filename]} ${8:${9:[xN} ${10:yN]}}"
+        },
+        "drawline": {
+            "prefix": "drawline",
+            "body": "drawline ${1:[-ihnr]} @${2:window} ${3:color} ${4:size} ${5:x1} ${6:y1} ${7:x2} ${8:y2} ${9:${10:[xN} ${11:yN]}}"
+        },
+        "drawpic": {
+            "prefix": "drawpic",
+            "body": "drawpic ${1:[-ihmnotsclgN]} @${2:window} ${3:[color]} ${4:x} ${5:y} ${6:${7:[w} ${8:h]}} ${9:${10:[x} ${11:y} ${12:w} ${13:h]}} ${14:[N]} ${15:filename}"
+        },
+        "drawrect": {
+            "prefix": "drawrect",
+            "body": "drawrect ${1:[-ihnrfecd]} @${2:window} ${3:[color]} ${4:size} ${5:x} ${6:y} ${7:w} ${8:h} ${9:${10:[xN} ${11:yN} ${12:wN} ${13:hN]}}"
+        },
+        "drawreplace": {
+            "prefix": "drawreplace",
+            "body": "drawreplace ${1:[-nr]} @${2:window} ${3:oldcolor} ${4:newcolor} ${5:${6:[x} ${7:y} ${8:w} ${9:h]}}"
+        },
+        "drawrot": {
+            "prefix": "drawrot",
+            "body": "drawrot ${1:[-hmnbfc]} @${2:window} ${3:[color]} ${4:angle} ${5:${6:[x} ${7:y} ${8:w} ${9:h]}}"
+        },
+        "drawsave": {
+            "prefix": "drawsave",
+            "body": "drawsave ${1:[-bNqN]} @${2:window} ${3:filename}"
+        },
+        "drawscroll": {
+            "prefix": "drawscroll",
+            "body": "drawscroll ${1:[-hn]} @${2:window} ${3:x} ${4:y} ${5:x} ${6:y} ${7:w} ${8:h} ${9:${10:[xN} ${11:yN} ${12:xN} ${13:yN} ${14:wN} ${15:hN]}}"
+        },
+        "drawtext": {
+            "prefix": "drawtext",
+            "body": "drawtext ${1:[-hnrpboc]} @${2:window} ${3:color} ${4:[color]} ${5:${6:[fontname} ${7:fontsize]}} ${8:x} ${9:y} ${10:${11:[w} ${12:h]}} ${13:text}"
+        },
+        "ebeeps": {
+            "prefix": "ebeeps",
+            "body": "ebeeps ${1:[on|off]}"
+        },
+        "echo": {
+            "prefix": "echo",
+            "body": "echo ${1:[color]} ${2:[-cdeghiNtsaqlbfnmr]} ${3:[colorname]} ${4:[#chan|[=]nick]} ${5:text}"
+        },
+        "editbox": {
+            "prefix": "editbox",
+            "body": "editbox ${1:[-saf[N]nopbNeNvqN]} ${2:[window]} ${3:text}"
+        },
+        "emailaddr": {
+            "prefix": "emailaddr",
+            "body": "emailaddr ${1:address}"
+        },
+        "enable": {
+            "prefix": "enable",
+            "body": "enable #${1:group} ${2:[#groupN]}"
+        },
+        "events": {
+            "prefix": "events",
+            "body": "events ${1:[on|off]}"
+        },
+        "exit": {
+            "prefix": "exit",
+            "body": "exit ${1:[-nr]}"
+        },
+        "fclose": {
+            "prefix": "fclose",
+            "body": "fclose ${1:name|wildcard}"
+        },
+        "filter": {
+            "prefix": "filter",
+            "body": "filter ${1:[-asdfhNkwxnpriocteubglLz]} ${2:[N-N2]} ${3:${4:[C} ${5:S]}} ${6:infile|dialogid} ${7:outfile|dialogid|alias} ${8:[alias]} ${9:matchtext}"
+        },
+        "findtext": {
+            "prefix": "findtext",
+            "body": "findtext ${1:[-n]} ${2:text}"
+        },
+        "firewall": {
+            "prefix": "firewall",
+            "body": "firewall ${1:[-cmN+/-d]} ${2:[on|off]} ${3:server} ${4:port} ${5:userid} ${6:password}"
+        },
+        "flash": {
+            "prefix": "flash",
+            "body": "flash ${1:[-bNwNrN]} ${2:[window]} ${3:text}"
+        },
+        "flist": {
+            "prefix": "flist",
+            "body": "flist ${1:[name|wildcard]}"
+        },
+        "flood": {
+            "prefix": "flood",
+            "body": "flood ${1:[+/-c]} ${2:required} ${3:[on|off|clear]} ${4:bytes} ${5:maxlines} ${6:maxmessages} ${7:ignoretime}"
+        },
+        "flush": {
+            "prefix": "flush",
+            "body": "flush ${1:[-l]} ${2:[levels]}"
+        },
+        "flushini": {
+            "prefix": "flushini",
+            "body": "flushini ${1:filename}"
+        },
+        "font": {
+            "prefix": "font",
+            "body": "font ${1:[-asbidz|window]} ${2:fontsize} ${3:fontname}"
+        },
+        "fopen": {
+            "prefix": "fopen",
+            "body": "fopen ${1:[-nox]} ${2:name} ${3:filename}"
+        },
+        "fseek": {
+            "prefix": "fseek",
+            "body": "fseek ${1:[-lnwr]} ${2:name} ${3:[pos|N|wildcard|regex]}"
+        },
+        "fsend": {
+            "prefix": "fsend",
+            "body": "fsend ${1:[on|off]}"
+        },
+        "fserve": {
+            "prefix": "fserve",
+            "body": "fserve ${1:nick} ${2:maxgets} ${3:homedir} ${4:[welcomefile]}"
+        },
+        "fullname": {
+            "prefix": "fullname",
+            "body": "fullname ${1:name}"
+        },
+        "fwrite": {
+            "prefix": "fwrite",
+            "body": "fwrite ${1:[-bn]} ${2:name} ${3:text|&bvar}"
+        },
+        "ghide": {
+            "prefix": "ghide",
+            "body": "ghide ${1:name}"
+        },
+        "gload": {
+            "prefix": "gload",
+            "body": "gload ${1:[-h]} ${2:name} ${3:filename|N|default}"
+        },
+        "gmove": {
+            "prefix": "gmove",
+            "body": "gmove ${1:name} ${2:x} ${3:y} ${4:[speed]}"
+        },
+        "gopts": {
+            "prefix": "gopts",
+            "body": "gopts ${1:[-bieqnh]} ${2:name} ${3:on off size pace hide nosize nopace nohide langid}"
+        },
+        "goto": {
+            "prefix": "goto",
+            "body": "goto ${1:label}"
+        },
+        "gplay": {
+            "prefix": "gplay",
+            "body": "gplay ${1:name} ${2:animname|N} ${3:[timeout]}"
+        },
+        "gpoint": {
+            "prefix": "gpoint",
+            "body": "gpoint ${1:name} ${2:x} ${3:y}"
+        },
+        "gqreq": {
+            "prefix": "gqreq",
+            "body": "gqreq ${1:on|off}"
+        },
+        "groups": {
+            "prefix": "groups",
+            "body": "groups ${1:[-e|-d]}"
+        },
+        "gshow": {
+            "prefix": "gshow",
+            "body": "gshow ${1:name} ${2:${3:[x} ${4:y]}}"
+        },
+        "gsize": {
+            "prefix": "gsize",
+            "body": "gsize ${1:name} ${2:w} ${3:h}"
+        },
+        "gstop": {
+            "prefix": "gstop",
+            "body": "gstop ${1:[-c]} ${2:name} ${3:[talk play]}"
+        },
+        "gtalk": {
+            "prefix": "gtalk",
+            "body": "gtalk ${1:[-kwlu]} ${2:name} ${3:[wavefile]} ${4:text}"
+        },
+        "gunload": {
+            "prefix": "gunload",
+            "body": "gunload ${1:name}"
+        },
+        "guser": {
+            "prefix": "guser",
+            "body": "guser ${1:[-a]} ${2:levels} ${3:nick} ${4:[type]} ${5:[info]}"
+        },
+        "hadd": {
+            "prefix": "hadd",
+            "body": "hadd ${1:[-smbczuN]} ${2:name} ${3:item} ${4:[text|&bvar]}"
+        },
+        "halt": {
+            "prefix": "halt",
+            "body": "halt"
+        },
+        "haltdef": {
+            "prefix": "haltdef",
+            "body": "haltdef"
+        },
+        "hdec": {
+            "prefix": "hdec",
+            "body": "hdec ${1:[-smbczuN]} ${2:name} ${3:item} ${4:[text|&bvar]}"
+        },
+        "hdel": {
+            "prefix": "hdel",
+            "body": "hdel ${1:[-sw]} ${2:name} ${3:item}"
+        },
+        "help": {
+            "prefix": "help",
+            "body": "help ${1:[keyword]}"
+        },
+        "hfree": {
+            "prefix": "hfree",
+            "body": "hfree ${1:[-sw]} ${2:name}"
+        },
+        "hinc": {
+            "prefix": "hinc",
+            "body": "hinc ${1:[-smbczuN]} ${2:name} ${3:item} ${4:[text|&bvar]}"
+        },
+        "hload": {
+            "prefix": "hload",
+            "body": "hload ${1:[-sbni]} ${2:name} ${3:filename} ${4:[section]}"
+        },
+        "hmake": {
+            "prefix": "hmake",
+            "body": "hmake ${1:[-s]} ${2:name} ${3:N}"
+        },
+        "hop": {
+            "prefix": "hop",
+            "body": "hop ${1:[-cn]} ${2:[#chan]} ${3:[message]}"
+        },
+        "hsave": {
+            "prefix": "hsave",
+            "body": "hsave ${1:[-sbniau]} ${2:name} ${3:filename} ${4:[section]}"
+        },
+        "ial": {
+            "prefix": "ial",
+            "body": "ial ${1:[on|off]}"
+        },
+        "ialclear": {
+            "prefix": "ialclear",
+            "body": "ialclear ${1:[nick]}"
+        },
+        "ialmark": {
+            "prefix": "ialmark",
+            "body": "ialmark ${1:nick} ${2:[text]}"
+        },
+        "identd": {
+            "prefix": "identd",
+            "body": "identd ${1:[on|off]} ${2:[userid]}"
+        },
+        "ignore": {
+            "prefix": "ignore",
+            "body": "ignore ${1:[-lrpcntikdwxuN]} ${2:on|off|nick|address} ${3:[type]} ${4:[network]}"
+        },
+        "iline": {
+            "prefix": "iline",
+            "body": "iline ${1:[-sahpinl]} ${2:[c]} @${3:window} ${4:N} ${5:text}"
+        },
+        "inc": {
+            "prefix": "inc",
+            "body": "inc ${1:[-cszeuN]} %${2:var} ${3:[value]}"
+        },
+        "invite": {
+            "prefix": "invite",
+            "body": "invite ${1:nick} #${2:chan}"
+        },
+        "iuser": {
+            "prefix": "iuser",
+            "body": "iuser ${1:nick|address} ${2:[info]}"
+        },
+        "join": {
+            "prefix": "join",
+            "body": "join ${1:[-inx]} #${2:chan}"
+        },
+        "kick": {
+            "prefix": "kick",
+            "body": "kick #${1:chan} ${2:nick}"
+        },
+        "linesep": {
+            "prefix": "linesep",
+            "body": "linesep ${1:[-s|window]}"
+        },
+        "links": {
+            "prefix": "links",
+            "body": "links ${1:[-nx]}"
+        },
+        "list": {
+            "prefix": "list",
+            "body": "list ${1:[#chan]} ${2:[-min N]} ${3:[-max N]}"
+        },
+        "load": {
+            "prefix": "load",
+            "body": "load ${1:[-a|-pscqnm|-ruvsN]} ${2:filename}"
+        },
+        "loadbuf": {
+            "prefix": "loadbuf",
+            "body": "loadbuf ${1:[lines]} ${2:[-apirsglecNnomt]} ${3:window|dialogid} ${4:filename}"
+        },
+        "localinfo": {
+            "prefix": "localinfo",
+            "body": "localinfo ${1:[-uhp]} ${2:[host]} ${3:[ip]}"
+        },
+        "log": {
+            "prefix": "log",
+            "body": "log ${1:on|off} ${2:window} ${3:[-f filename]}"
+        },
+        "logview": {
+            "prefix": "logview",
+            "body": "logview ${1:filename}"
+        },
+        "mdi": {
+            "prefix": "mdi",
+            "body": "mdi ${1:-act}"
+        },
+        "me": {
+            "prefix": "me",
+            "body": "me ${1:message}"
+        },
+        "menubar": {
+            "prefix": "menubar",
+            "body": "menubar ${1:on|off}"
+        },
+        "mkdir": {
+            "prefix": "mkdir",
+            "body": "mkdir ${1:dirname}"
+        },
+        "mnick": {
+            "prefix": "mnick",
+            "body": "mnick ${1:newnick}"
+        },
+        "mode": {
+            "prefix": "mode",
+            "body": "mode ${1:#chan|nick} ${2:[+/-]modechars} ${3:parameters}"
+        },
+        "msg": {
+            "prefix": "msg",
+            "body": "msg ${1:nick} ${2:message}"
+        },
+        "nick": {
+            "prefix": "nick",
+            "body": "nick ${1:newnick}"
+        },
+        "noop": {
+            "prefix": "noop",
+            "body": "noop"
+        },
+        "notice": {
+            "prefix": "notice",
+            "body": "notice ${1:nick} ${2:message}"
+        },
+        "notify": {
+            "prefix": "notify",
+            "body": "notify ${1:[-shrln]} ${2:on|off|nick} ${3:[network|address]} ${4:[note]}"
+        },
+        "omsg": {
+            "prefix": "omsg",
+            "body": "omsg ${1:[#chan]} ${2:message}"
+        },
+        "onotice": {
+            "prefix": "onotice",
+            "body": "onotice ${1:[#chan]} ${2:message}"
+        },
+        "parseline": {
+            "prefix": "parseline",
+            "body": "parseline -${1:iotbqpnuN} ${2:[text|&bvar]}"
+        },
+        "part": {
+            "prefix": "part",
+            "body": "part #${1:chan}"
+        },
+        "partall": {
+            "prefix": "partall",
+            "body": "partall ${1:[message]}"
+        },
+        "pdcc": {
+            "prefix": "pdcc",
+            "body": "pdcc ${1:[on|off]}"
+        },
+        "perform": {
+            "prefix": "perform",
+            "body": "perform ${1:[on|off]}"
+        },
+        "play": {
+            "prefix": "play",
+            "body": "play ${1:[-escpbnxqNmNfNrlNtN]} ${2:[alias]} ${3:[#chan|nick|stop]} ${4:filename} ${5:[delay]}"
+        },
+        "playctrl": {
+            "prefix": "playctrl",
+            "body": "playctrl"
+        },
+        "pop": {
+            "prefix": "pop",
+            "body": "pop ${1:delay} ${2:[#chan]} ${3:nick}"
+        },
+        "protect": {
+            "prefix": "protect",
+            "body": "protect ${1:[-rw]} ${2:on|off|nick} ${3:[#chan1,#chanN]} ${4:[type]} ${5:[network]}"
+        },
+        "proxy": {
+            "prefix": "proxy",
+            "body": "proxy ${1:[-cmN+/-d]} ${2:[on|off]} ${3:server} ${4:port} ${5:userid} ${6:password}"
+        },
+        "pvoice": {
+            "prefix": "pvoice",
+            "body": "pvoice ${1:delay} ${2:[#chan]} ${3:nick}"
+        },
+        "qme": {
+            "prefix": "qme",
+            "body": "qme ${1:message}"
+        },
+        "qmsg": {
+            "prefix": "qmsg",
+            "body": "qmsg ${1:message}"
+        },
+        "query": {
+            "prefix": "query",
+            "body": "query ${1:[-n]} ${2:nick} ${3:message}"
+        },
+        "queryrn": {
+            "prefix": "queryrn",
+            "body": "queryrn ${1:nick} ${2:newnick}"
+        },
+        "quit": {
+            "prefix": "quit",
+            "body": "quit ${1:[message]}"
+        },
+        "raw": {
+            "prefix": "raw",
+            "body": "raw ${1:[on|off|[-qn] command]}"
+        },
+        "reload": {
+            "prefix": "reload",
+            "body": "reload ${1:[-a|-pscqnm|-ruvsN]} ${2:filename}"
+        },
+        "remini": {
+            "prefix": "remini",
+            "body": "remini ${1:inifile} ${2:section} ${3:[item]}"
+        },
+        "remote": {
+            "prefix": "remote",
+            "body": "remote ${1:[on|off]}"
+        },
+        "remove": {
+            "prefix": "remove",
+            "body": "remove ${1:[-b]} ${2:filename}"
+        },
+        "rename": {
+            "prefix": "rename",
+            "body": "rename ${1:file|dirname} ${2:newfile|newdirname}"
+        },
+        "renwin": {
+            "prefix": "renwin",
+            "body": "renwin @${1:oldname} @${2:newname} ${3:[topic]}"
+        },
+        "reseterror": {
+            "prefix": "reseterror",
+            "body": "reseterror"
+        },
+        "resetidle": {
+            "prefix": "resetidle",
+            "body": "resetidle ${1:[seconds]}"
+        },
+        "return": {
+            "prefix": "return",
+            "body": "return ${1:[value]}"
+        },
+        "rlevel": {
+            "prefix": "rlevel",
+            "body": "rlevel ${1:[-r]} ${2:levels}"
+        },
+        "rline": {
+            "prefix": "rline",
+            "body": "rline ${1:[-sahpinl]} ${2:[c]} @${3:window} ${4:N} ${5:text}"
+        },
+        "rmdir": {
+            "prefix": "rmdir",
+            "body": "rmdir ${1:dirname}"
+        },
+        "run": {
+            "prefix": "run",
+            "body": "run ${1:[-hnp]} ${2:filename} ${3:[parameters]}"
+        },
+        "ruser": {
+            "prefix": "ruser",
+            "body": "ruser ${1:[levels]} ${2:nick|address} ${3:[type]}"
+        },
+        "save": {
+            "prefix": "save",
+            "body": "save ${1:-pscqnm|-ruv} ${2:filename}"
+        },
+        "savebuf": {
+            "prefix": "savebuf",
+            "body": "savebuf ${1:[-sgaol]} ${2:[lines]} ${3:window|dialogid} ${4:filename}"
+        },
+        "saveini": {
+            "prefix": "saveini",
+            "body": "saveini"
+        },
+        "say": {
+            "prefix": "say",
+            "body": "say ${1:message}"
+        },
+        "scid": {
+            "prefix": "scid",
+            "body": "scid ${1:[-rsatN|cid]} ${2:[command]}"
+        },
+        "scon": {
+            "prefix": "scon",
+            "body": "scon ${1:[-rsatN|N]} ${2:[command]}"
+        },
+        "server": {
+            "prefix": "server",
+            "body": "server ${1:[-46emnstarpfocz]} ${2:server|groupname} ${3:[port]} ${4:[password]} ${5:[-i nick anick email name]} ${6:[-jn #chan pass]}"
+        },
+        "set": {
+            "prefix": "set",
+            "body": "set ${1:[-snzelkuN]} %${2:var} ${3:value}"
+        },
+        "showmirc": {
+            "prefix": "showmirc",
+            "body": "showmirc -${1:mnrstxoplf}"
+        },
+        "signal": {
+            "prefix": "signal",
+            "body": "signal ${1:[-n]} ${2:name} ${3:parameters}"
+        },
+        "sline": {
+            "prefix": "sline",
+            "body": "sline ${1:[-sahl]} @${2:window} ${3:N}"
+        },
+        "sline\t(chan listbox)": {
+            "prefix": "sline\t(chan listbox)",
+            "body": "sline ${1:[-a|-r]} ${2:#chan} ${3:N|nick}"
+        },
+        "sockaccept": {
+            "prefix": "sockaccept",
+            "body": "sockaccept ${1:name}"
+        },
+        "sockclose": {
+            "prefix": "sockclose",
+            "body": "sockclose ${1:name}"
+        },
+        "socklist": {
+            "prefix": "socklist",
+            "body": "socklist ${1:[-tul]} ${2:[name]}"
+        },
+        "socklisten": {
+            "prefix": "socklisten",
+            "body": "socklisten ${1:[-dp]} ${2:[bindip]} ${3:name} ${4:[port]}"
+        },
+        "sockmark": {
+            "prefix": "sockmark",
+            "body": "sockmark ${1:name} ${2:[text]}"
+        },
+        "sockopen": {
+            "prefix": "sockopen",
+            "body": "sockopen ${1:[-de64]} ${2:[bindip]} ${3:name} ${4:address} ${5:port}"
+        },
+        "sockpause": {
+            "prefix": "sockpause",
+            "body": "sockpause ${1:[-r]} ${2:name}"
+        },
+        "sockread": {
+            "prefix": "sockread",
+            "body": "sockread ${1:[-fn]} ${2:[numbytes] ${3:%var|&bvar}}"
+        },
+        "sockrename": {
+            "prefix": "sockrename",
+            "body": "sockrename ${1:name} ${2:newname}"
+        },
+        "sockudp": {
+            "prefix": "sockudp",
+            "body": "sockudp ${1:[-bntkd]} ${2:bindip} ${3:name} ${4:[localport]} ${5:ipaddress} ${6:port} ${7:[bytes]} ${8:[text|%var|&bvar]}"
+        },
+        "sockwrite": {
+            "prefix": "sockwrite",
+            "body": "sockwrite ${1:[-tnba]} ${2:name} ${3:[bytes]} ${4:text|%var|&bvar}"
+        },
+        "sound": {
+            "prefix": "sound",
+            "body": "sound ${1:[on|off|nick|#chan]} ${2:filename} ${3:message}"
+        },
+        "speak": {
+            "prefix": "speak",
+            "body": "speak ${1:[-spclu]} ${2:[speed]} ${3:[pitch]} ${4:[text]}"
+        },
+        "splay": {
+            "prefix": "splay",
+            "body": "splay ${1:[-cwmpq]} ${2:[filename|stop|pause|resume|seek|skip]} ${3:[pos]}"
+        },
+        "sreq": {
+            "prefix": "sreq",
+            "body": "sreq ${1:[+/-m]} ${2:[ask|auto|ignore]}"
+        },
+        "strip": {
+            "prefix": "strip",
+            "body": "strip ${1:[+/-burc]}"
+        },
+        "switchbar": {
+            "prefix": "switchbar",
+            "body": "switchbar ${1:on|off}"
+        },
+        "timer": {
+            "prefix": "timer",
+            "body": "timer${1:[N|name]} ${2:[-cdeomhipr]} ${3:[time]} ${4:repetitions} ${5:interval} ${6:command}"
+        },
+        "timestamp": {
+            "prefix": "timestamp",
+            "body": "timestamp ${1:[-fgs|-a|-e]} ${2:[on|off|default]} ${3:[window]}"
+        },
+        "tip": {
+            "prefix": "tip",
+            "body": "tip ${1:-ct} ${2:name|N} ${3:[text]}"
+        },
+        "tips": {
+            "prefix": "tips",
+            "body": "tips ${1:[on|off]}"
+        },
+        "titlebar": {
+            "prefix": "titlebar",
+            "body": "titlebar ${1:[@window]} ${2:text}"
+        },
+        "tnick": {
+            "prefix": "tnick",
+            "body": "tnick ${1:nick}"
+        },
+        "tokenize": {
+            "prefix": "tokenize",
+            "body": "tokenize ${1:C} ${2:text}"
+        },
+        "toolbar": {
+            "prefix": "toolbar",
+            "body": "toolbar ${1:[on|off|-aidmsxkNnNzNebwhyNurctplorf[sld]]} ${2:[N]} ${3:name|N} ${4:tooltip} ${5:picfile|@window} ${6:${7:[x} ${8:y} ${9:w} ${10:h]}} ${11:[/alias]} ${12:[popfile|@window]}"
+        },
+        "topic": {
+            "prefix": "topic",
+            "body": "topic #${1:chan} ${2:newtopic}"
+        },
+        "tray": {
+            "prefix": "tray",
+            "body": "tray ${1:[-iNmNsNtNaN]} ${2:filename}"
+        },
+        "treebar": {
+            "prefix": "treebar",
+            "body": "treebar ${1:on|off}"
+        },
+        "ulist": {
+            "prefix": "ulist",
+            "body": "ulist ${1:[<|>]level}"
+        },
+        "unload": {
+            "prefix": "unload",
+            "body": "unload ${1:-a|-nrs} ${2:filename}"
+        },
+        "unset": {
+            "prefix": "unset",
+            "body": "unset ${1:[-s]} %${2:var}"
+        },
+        "unsetall": {
+            "prefix": "unsetall",
+            "body": "unsetall"
+        },
+        "updatenl": {
+            "prefix": "updatenl",
+            "body": "updatenl"
+        },
+        "url": {
+            "prefix": "url",
+            "body": "url ${1:[on|off|show|hide|-dranils]} ${2:[N|mark|address]}"
+        },
+        "uwho": {
+            "prefix": "uwho",
+            "body": "uwho ${1:[nick]}${2: $1}"
+        },
+        "var": {
+            "prefix": "var",
+            "body": "var %${1:var} = ${2:value}"
+        },
+        "vcadd": {
+            "prefix": "vcadd",
+            "body": "vcadd ${1:command1[,commandN]}"
+        },
+        "vcmd": {
+            "prefix": "vcmd",
+            "body": "vcmd ${1:[-lc]} ${2:on|off|sleep}"
+        },
+        "vcrem": {
+            "prefix": "vcrem",
+            "body": "vcrem ${1:command1[,commandN]}"
+        },
+        "whois": {
+            "prefix": "whois",
+            "body": "whois ${1:nick}"
+        },
+        "window": {
+            "prefix": "window",
+            "body": "window ${1:[-abBcCde[N]fg[N]hHij[N]k[N]l[N]mMn[N]oprRsSuvw[N]xz]} ${2:[-tN,..,N]} ${3:[+bdeflLmnstx]} @${4:name} ${5:${6:[x} ${7:y} ${8:${9:[w} ${10:h]]}}} ${11:[/command]} ${12:[popup.txt]} ${13:${14:[font} ${15:[size]]}} ${16:${17:[iconfile} ${18:[N]]}}"
+        },
+        "winhelp": {
+            "prefix": "winhelp",
+            "body": "winhelp ${1:filename} ${2:[key]}"
+        },
+        "vol": {
+            "prefix": "vol",
+            "body": "vol ${1:[-wmpvuN]} ${2:[volume]}"
+        },
+        "write": {
+            "prefix": "write",
+            "body": "write ${1:[-cidnalNsNwNrNmN]} ${2:filename} ${3:[text]}"
+        },
+        "writeini": {
+            "prefix": "writeini",
+            "body": "writeini ${1:[-n]} ${2:inifile} ${3:section} ${4:item} ${5:value}"
+        }
+    }
+}
