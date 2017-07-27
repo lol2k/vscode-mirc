@@ -1,6 +1,6 @@
 # vscode-mirc
 
-mIRC language support for VS Code
+mIRC scripting language support for VS Code
 
 ## Features
 
@@ -13,7 +13,7 @@ mIRC language support for VS Code
     * `Ctrl+P` (Win, Linux)
     * `⌘+P` (OSX)
 2. Enter in the following command:
-    * `ext install vscode-mirc`
+    * `ext install mirc`
 3. Install the topmost extension
 
 ## Credits
