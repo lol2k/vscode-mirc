@@ -2,99 +2,123 @@
     "meta.conditional.statement.mrc": {
         "isin": {
             "prefix": "isin",
-            "body": "isin"
+            "body": "isin",
+            "description": "<needle> isin <haystack>"
         },
         "isincs": {
             "prefix": "isincs",
-            "body": "isincs"
+            "body": "isincs",
+            "description": "<needle> isincs <haystack>"
         },
         "iswm": {
             "prefix": "iswm",
-            "body": "iswm"
+            "body": "iswm",
+            "description": "<wildcard> iswm <string>"
         },
         "iswmcs": {
             "prefix": "iswmcs",
-            "body": "iswmcs"
+            "body": "iswmcs",
+            "description": "<wildcard> iswmcs <string>"
         },
         "isnum": {
             "prefix": "isnum",
-            "body": "isnum"
+            "body": "isnum",
+            "description": "<number> isnum [range]\n\n[range] is in the form of n1-n2"
         },
         "isletter": {
             "prefix": "isletter",
-            "body": "isletter"
+            "body": "isletter",
+            "description": "<letter> isletter [list]\n\n[list] is a string of possible letter matches"
         },
         "isalnum": {
             "prefix": "isalnum",
-            "body": "isalnum"
+            "body": "isalnum",
+            "description": "<string> isalnum"
         },
         "isalpha": {
             "prefix": "isalpha",
-            "body": "isalpha"
+            "body": "isalpha",
+            "description": "<string> isalpha"
         },
         "islower": {
             "prefix": "islower",
-            "body": "islower"
+            "body": "islower",
+            "description": "<string> islower"
         },
         "isupper": {
             "prefix": "isupper",
-            "body": "isupper"
+            "body": "isupper",
+            "description": "<string> isupper"
         },
         "ison": {
             "prefix": "ison",
-            "body": "ison"
+            "body": "ison",
+            "description": "<nick> ison <chan>"
         },
         "isop": {
             "prefix": "isop",
-            "body": "isop"
+            "body": "isop",
+            "description": "<nick> isop <chan>"
         },
         "ishop": {
             "prefix": "ishop",
-            "body": "ishop"
+            "body": "ishop",
+            "description": "<nick> ishop <chan>"
         },
         "isvoice": {
             "prefix": "isvoice",
-            "body": "isvoice"
+            "body": "isvoice",
+            "description": "<nick> isvoice <chan>"
         },
         "isreg": {
             "prefix": "isreg",
-            "body": "isreg"
+            "body": "isreg",
+            "description": "<nick> isreg <chan>"
         },
         "ischan": {
             "prefix": "ischan",
-            "body": "ischan"
+            "body": "ischan",
+            "description": "<chan> ischan"
         },
         "isban": {
             "prefix": "isban",
-            "body": "isban"
+            "body": "isban",
+            "description": "<address> isban <chan>"
         },
         "isinvite": {
             "prefix": "isinvite",
-            "body": "isinvite"
+            "body": "isinvite",
+            "description": "<address> isinvite <chan>"
         },
         "isexcept": {
             "prefix": "isexcept",
-            "body": "isexcept"
+            "body": "isexcept",
+            "description": "<address> isexcept <chan>"
         },
         "isaop": {
             "prefix": "isaop",
-            "body": "isaop"
+            "body": "isaop",
+            "description": "<user> isaop [chan]"
         },
         "isavoice": {
             "prefix": "isavoice",
-            "body": "isavoice"
+            "body": "isavoice",
+            "description": "<user> isavoice [chan]"
         },
         "isignore": {
             "prefix": "isignore",
-            "body": "isignore"
+            "body": "isignore",
+            "description": "<user> isignore [chan]"
         },
         "isprotect": {
             "prefix": "isprotect",
-            "body": "isprotect"
+            "body": "isprotect",
+            "description": "<user> isprotect [chan]"
         },
         "isnotify": {
             "prefix": "isnotify",
-            "body": "isnotify"
+            "body": "isnotify",
+            "description": "<user> isnotify"
         }
     }
 }
