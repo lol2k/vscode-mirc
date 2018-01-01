@@ -42,7 +42,7 @@
         "function-definitions": {
             "patterns": [
                 {
-                    "match": "^(?i)^(alias)\\s+(?:-l\\s+)?(\\w+)\\s+(?={)",
+                    "match": "^(?i)^(alias)\\s+(?:-l\\s+)?(\\w+)\\s+({)",
                     "captures": {
                         "1": {"name": "storage.type.alias.mrc"},
                         "2": {"name": "entity.name.function.mrc"}
@@ -96,14 +96,15 @@
         "variable-assignments": {
             "patterns": [
                 {
-                    "match": "(?i)(?:(?:^|(?<=[|{)]|else)\\s)\\s*((/*)var)?|(,)\\s+)\\s*((%)\\w+)(?:\\s+(=)\\s+)?",
+                    "match": "(?i)(?:(?:^|(?<=[|{)]|else)\\s)\\s*((/*)!?var(\\s-g)?)?|(,)\\s+)\\s*((%)\\w+)(?:\\s+(=)\\s+)?",
                     "captures": {
                         "1": {"name": "storage.type.mrc"},
                         "2": {"name": "punctuation.definition.command.mrc"},
                         "3": {"name": "punctuation.separator.delimiter.mrc"},
                         "4": {"name": "variable.other.normal.mrc"},
-                        "5": {"name": "meta.punctuation.definition.variable.other.normal.mrc"},
-                        "6": {"name": "keyword.operator.assignment.mrc"}
+                        "5": {"name": "variable.global.set.mrc"},
+                        "6": {"name": "meta.punctuation.definition.variable.other.normal.mrc"},
+                        "7": {"name": "keyword.operator.assignment.mrc"}
                     }
                 },
                 {
@@ -195,7 +196,7 @@
         "keywords": {
             "patterns": [
                 {
-                    "match": "(?:^|(?<=[|{)]|else)\\s)\\s*(/*(?i:break|continue|goto|halt(?:def)?|return))\\b",
+                    "match": "(?:^|(?<=[|{)]|else)\\s)\\s*(/*!?(?i:break|continue|goto|halt(?:def)?|return))\\b",
                     "captures": {
                         "1": {"name": "keyword.control.flow.mrc"}
                     }
@@ -206,7 +207,7 @@
             "patterns": [
                 {
                     "comment": "built-in commands (-timer/var/set)",
-                    "match": "(?:^|(?<=[|{)]|else)\\s)\\s*((/*)(?:(!)(\\.)?|(\\.)(!)?)?(?i:abook|ajinvite|alias|aline|ame|amsg|anick|aop|auser|autojoin|away|avoice|background|ban|bcopy|beep|bindip|bread|breplace|bset|btrunc|bunset|bwrite|channel|clear(?:all)?|cline|clipboard|close|cnick|color|com(?:close|list|open|reg)|copy|creq|ctcreply|ctcps|dcc|ddcserver|dde|ddeserver|debug|dec|describe|dialog|did|didtok|disable|disconnect|dlevel|dline|dll|dns|dqwindow|draw(?:copy|dot|fill|line|pic|rect|replace|rot|save|scroll|text)|ebeeps|echo|editbox|emailaddr|enable|events|exit|fclose|filter|findtext|firewall|flash|flist|flood|flush|flushini|font|fopen|fseek|fsend|fserve|fullname|fwrite|ghide|gload|gmove|gopts|gplay|gpoint|gqreq|groups|gshow|gsize|gstop|gtalk|gunload|guser|hadd|hdec|hdel|help|hfree|hinc|hload|hmake|hop|hsave|ial(?:clear|mark)?|identd|ignore|iline|inc|invite|iuser|join|kick|linesep|links|list|load(?:buf)?|localinfo|log|logview|mdi|me|menubar|mkdir|mnick|mode|msg|nick|noop|notice|notify|omsg|onotice|part|partall|pdcc|perform|play|playctrl|pop|protect|proxy|pvoice|qme|qmsg|query|queryrn|quit|raw|reload|remini|remote|remove|rename|renwin|reseterror|resetidle|rlevel|rline|rmdir|run|ruser|save(?:buf|ini)?|say|scid|scon|server|showmirc|signal|sline|sock(?:accept|close|list|listen|mark|open|pause|read|rename|udp|write)|sound|speak|splay|sreq|strip|switchbar|timestamp|tip|tips|titlebar|tnick|tokenize|toolbar|topic|tray|treebar|ulist|unload|unset|unsetall|updatenl|url|uwho|vc(?:add|md|rem)|whois|window|winhelp|vol|write|writeini))(?=\\s)",
+                    "match": "(?:^|(?<=[|{)]|else)\\s)\\s*((/*)(?:(!)(\\.)?|(\\.)(!)?)?!?(?i:abook|ajinvite|alias|aline|ame|amsg|anick|aop|auser|autojoin|away|avoice|background|ban|bcopy|beep|bindip|bread|breplace|bset|btrunc|bunset|bwrite|channel|clear(?:all)?|cline|clipboard|close|cnick|color|com(?:close|list|open|reg)|copy|creq|ctcreply|ctcps|dcc|ddcserver|dde|ddeserver|debug|dec|describe|dialog|did|didtok|disable|disconnect|dlevel|dline|dll|dns|dqwindow|draw(?:copy|dot|fill|line|pic|rect|replace|rot|save|size|scroll|text)|ebeeps|echo|editbox|emailaddr|enable|events|exit|fclose|filter|findtext|firewall|flash|flist|flood|flush|flushini|font|fopen|fseek|fsend|fserve|fullname|fwrite|ghide|gload|gmove|gopts|gplay|gpoint|gqreq|groups|gshow|gsize|gstop|gtalk|gunload|guser|hadd|hdec|hdel|help|hfree|hinc|hload|hmake|hop|hsave|ial(?:clear|mark)?|identd|ignore|iline|inc|invite|iuser|join|kick|linesep|links|list|load(?:buf)?|localinfo|log|logview|mdi|me|menubar|mkdir|mnick|mode|msg|nick|noop|notice|notify|omsg|onotice|part|partall|pdcc|perform|play|playctrl|pop|protect|proxy|pvoice|qme|qmsg|query|queryrn|quit|raw|reload|remini|remote|remove|rename|renwin|reseterror|resetidle|rlevel|rline|rmdir|run|ruser|save(?:buf|ini)?|say|scid|scon|server|showmirc|signal|sline|sock(?:accept|close|list|listen|mark|open|pause|read|rename|udp|write)|sound|speak|splay|sreq|strip|switchbar|timestamp|tip|tips|titlebar|tnick|tokenize|toolbar|topic|tray|treebar|ulist|unload|unset|unsetall|updatenl|url|uwho|vc(?:add|md|rem)|whois|window|winhelp|vol|write|writeini))(?=\\s)",
                     "captures": {
                         "1": {"name": "support.function.command.default.mrc"},
                         "2": {"name": "punctuation.definition.command.mrc"},
@@ -244,7 +245,7 @@
                 {
                     "comment": "$null $true $false $pi $crlf ...",
                     "name": "constant.language.mrc",
-                    "match": "(\\$)(!)?(?i:true|false|null|pi|crlf|cr|lf)\\b",
+                    "match": "(\\$~?)(!)?(?i:true|false|null|pi|crlf|cr|lf)\\b",
                     "captures": {
                         "1": {"name": "meta.punctuation.definition.identifier.mrc"},
                         "2": {"name": "meta.keyword.operator.identifier.default.mrc"}
@@ -253,7 +254,7 @@
                 {
                     "comment": "$$?= $?*= $?!= $?",
                     "name": "keyword.operator.input-prompt.mrc",
-                    "match": "(\\$)(\\$)?\\?(?:[*!]?(?==))?",
+                    "match": "(\\$)(\\$)?~?\\?(?:[*!]?(?==))?",
                     "captures": {
                         "1": {"name": "meta.punctuation.definition.identifier.mrc"},
                         "2": {"name": "meta.punctuation.definition.identifier.mrc"}
@@ -262,7 +263,7 @@
                 {
                     "comment": "$$0 $1- $2-3 $?4",
                     "name": "support.type.parameter.mrc",
-                    "match": "(\\$)(\\$)?(?:\\d+(?:-\\d+|-)?|\\?\\d+)(?!\\w)",
+                    "match": "(\\$)(\\$)?~?(?:\\d+(?:-\\d+|-)?|\\?\\d+)(?!\\w)",
                     "captures": {
                         "1": {"name": "meta.punctuation.definition.identifier.mrc"},
                         "2": {"name": "meta.punctuation.definition.identifier.mrc"}
@@ -271,14 +272,14 @@
                 {
                     "comment": "$ifmatch $v1 $v2 $!",
                     "name": "support.type.prev-result.mrc",
-                    "match": "(\\$)(?:!|!?(?i:ifmatch|v[12]))\\b",
+                    "match": "(\\$~?)(?:!|!?(?i:ifmatch|v[12]))\\b",
                     "captures": {
                         "1": {"name": "meta.punctuation.definition.identifier.mrc"}
                     }
                 },
                 {
                     "comment": "$() $+()",
-                    "begin": "((\\$)\\+?)(\\()",
+                    "begin": "((\\$~?)\\+?)(\\()",
                     "beginCaptures": {
                         "1": {"name": "support.function.identifier.default.mrc"},
                         "2": {"name": "meta.punctuation.definition.identifier.mrc"},
@@ -296,13 +297,13 @@
                 {
                     "comment": "$+ $&",
                     "name": "keyword.operator.string.mrc",
-                    "match": "(\\$)[&+]\\B",
+                    "match": "(\\$~?)[&+]\\B",
                     "captures": {
                         "1": {"name": "meta.punctuation.definition.identifier.mrc"}
                     }
                 },
                 {
-                    "begin": "((\\$)(!)?iif)(\\()",
+                    "begin": "((\\$~?)(!)?iif)(\\()",
                     "beginCaptures": {
                         "1": {"name": "support.function.identifier.default.mrc"},
                         "2": {"name": "meta.punctuation.definition.identifier.mrc"},
@@ -321,7 +322,7 @@
                     ]
                 },
                 {
-                    "begin": "((\\$)(!)?calc)(\\()",
+                    "begin": "((\\$~?)(!)?calc)(\\()",
                     "beginCaptures": {
                         "1": {"name": "support.function.identifier.default.mrc"},
                         "2": {"name": "meta.punctuation.definition.identifier.mrc"},
@@ -341,7 +342,7 @@
                 },
                 {
                     "comment": "$and() $file() $regex() $window() ...",
-                    "begin": "((\\$)(!)?(?i:abook|abs|acos|address|addtok|agent|alias|and|ansi2mirc|aop|asc|asctime|asin|atan2?|avoice|base|bfind|bindip|bitoff|biton|bvar|bytes|cb|ceil|chan|chat|chr|click|cnick|color|com(?:call|chan|val)?|compress|cosh?|count|countcs|crc|ctime|dccignore|dde|decode|decompress|deltok|dialog|did(?:reg|tok|wm)?|disk|dll|dllcall|dns|duration|editbox|encode|eval|exists|fgetc|file|find(?:dir|file|tok)|fline|floor|fopen|fread|fserve|get(?:dot|tok)?|group|hash|height|hfind|hget|highlight|hypot|ial|ialchan|ibl|iel|ignore|iil|inellipse|ini|inpoly|input|inrect|inroundrect|instok|int|intersect|iptype|isalias|isbit|isdde|isdir|isfile|islower|istok|istokcs|isupper|left|len|level|line|lines|link|lock|log|log10|longfn|longip|lower|mask|matchtok|matchtokcs|md5|mid|mk(?:fn|logfn|nickfn)|mode|msfile|nick|nofile|nopath|noqt|not|notags|notify|numtok|onpoly|or|ord|pic|play|portfree|pos|poscs|protect|puttok|qt|query|rand|read|readini|reg(?:ex|ml|mlex|sub|subex)|remove|removecs|remtok|remtokcs|replacex?|replacex?cs|reptok|reptokcs|rgb|right|round|scid|scon|script|sdir|send|server|sfile|sha1|shortfn|sin|sline|snick|sock|sorttok|sorttokcs|sound|speak|sqrt|str|strip|style|submenu|tanh?|timer|tip|toolbar|trust|ulist|upper|uptime|var|vcmd|width|wildtok|wildtokcs|window|vol|wrap|xor))(\\()",
+                    "begin": "((\\$~?)(!)?(?i:abook|abs|acos|address|addtok|agent|alias|and|ansi2mirc|aop|asc|asctime|asin|atan2?|avoice|base|bfind|bindip|bitoff|biton|bvar|bytes|cb|ceil|chan|chat|chr|click|cnick|color|com(?:call|chan|val)?|compress|cosh?|count|countcs|crc|ctime|dccignore|dde|decode|decompress|deltok|dialog|did(?:reg|tok|wm)?|disk|dll|dllcall|dns|duration|editbox|encode|eval|exists|fgetc|file|find(?:dir|file|tok)|fline|floor|fopen|fread|fserve|get(?:dot|tok)?|group|hash|height|hfind|hget|highlight|hypot|ial|ialchan|ibl|iel|ignore|iil|inellipse|ini|inpoly|input|inrect|inroundrect|instok|int|intersect|iptype|isalias|isbit|isdde|isdir|isfile|islower|istok|istokcs|isupper|left|len|level|line|lines|link|lock|log|log10|longfn|longip|lower|mask|matchtok|matchtokcs|md5|mid|mk(?:fn|logfn|nickfn)|mode|msfile|nick|nofile|nopath|noqt|not|notags|notify|numtok|onpoly|or|ord|pic|play|portfree|pos|poscs|protect|puttok|qt|query|rand|read|readini|reg(?:ex|ml|mlex|sub|subex)|remove|removecs|remtok|remtokcs|replacex?|replacex?cs|reptok|reptokcs|rgb|right|round|scid|scon|script|sdir|send|server|sfile|sha1|shortfn|sin|sline|snick|sock|sorttok|sorttokcs|sound|speak|sqrt|str|strip|style|submenu|tanh?|timer|tip|toolbar|trust|ulist|upper|uptime|var|vcmd|width|wildtok|wildtokcs|window|vol|wrap|xor))(\\()",
                     "beginCaptures": {
                         "1": {"name": "support.function.identifier.default.mrc"},
                         "2": {"name": "meta.punctuation.definition.identifier.mrc"},
@@ -362,7 +363,7 @@
                 {
                     "comment": "$active $me $server $window ...",
                     "name": "support.type.identifier.default.noargs.mrc",
-                    "match": "(\\$)(!)?(?i:active(?:cid|wid)?|address|agent(?:name|stat|ver)|anick|aop|appactive|appstate|away(?:msg|time)?|avoice|banmask|bnick|cb|cd|chan(?:modes|types)?|cid|clevel|cmdbox|cmdline|comerr|compact|creq|ctimer?|ctrlenter|date|day|daylight|dbuh|dbuw|dccignore|dccport|ddename|debug|devent|dlevel|dname|ebeeps|emailaddr|error|event|feof|ferr|filename|filtered|find(?:dirn|filen)|full(?:address|date|name|screen)|getdir|gmt|halted|highlight|hnick|host|hotline|hotlinepos|ial|idle|ignore|inmidi|inpaste|insong|inwave|ip|isid|key(?:char|rpt|val)|knick|lactive(?:cid|wid)?|leftwin(?:cid|wid)?|locked|log(?:dir|stamp|stampfmt)?|ltimer|maddress|matchkey|me|menu(?:bar|context|type)?|mididir|mirc(?:dir|exe|ini)|mnick|mode(?:first|last|spl)|mouse|network|newnick|nick|numeric|online|opnick|os|passivedcc|pi|pnick|port|portable|prefix|prop|protect|rawbytes|rawmsg|readn|remote|result|script(?:dir|line)?|server(?:ip|target)?|show|signal|site|snicks|snotify|sock(?:br|err|name)|sreq|ssl(?:dll|libdll|ready|version)?|status|stripped|switchbar|target|ticks|time|timestamp|timestampfmt|timezone|tips|titlebar|toolbar|treebar|ulevel|url|usermode|vcmd(?:stat|ver)|version|wid|wildsite|window|vnick)\\b",
+                    "match": "(\\$~?)(!)?(?i:active(?:cid|wid)?|address|agent(?:name|stat|ver)|anick|aop|appactive|appstate|away(?:msg|time)?|avoice|banmask|bnick|cb|cd|chan(?:modes|types)?|cid|clevel|cmdbox|cmdline|comerr|compact|creq|ctimer?|ctrlenter|date|day|daylight|dbuh|dbuw|dccignore|dccport|ddename|debug|devent|dlevel|dname|ebeeps|emailaddr|error|event|feof|ferr|filename|filtered|find(?:dirn|filen)|full(?:address|date|name|screen)|getdir|gmt|halted|highlight|hnick|host|hotline|hotlinepos|ial|idle|ignore|inmidi|inpaste|insong|inwave|ip|isid|key(?:char|rpt|val)|knick|lactive(?:cid|wid)?|leftwin(?:cid|wid)?|locked|log(?:dir|stamp|stampfmt)?|ltimer|maddress|matchkey|me|menu(?:bar|context|type)?|mididir|mirc(?:dir|exe|ini)|mnick|mode(?:first|last|spl)|mouse|network|newnick|nick|numeric|online|opnick|os|passivedcc|pi|pnick|port|portable|prefix|prop|protect|rawbytes|rawmsg|readn|remote|result|script(?:dir|line)?|server(?:ip|target)?|show|signal|site|snicks|snotify|sock(?:br|err|name)|sreq|ssl(?:dll|libdll|ready|version)?|status|stripped|switchbar|target|ticks|time|timestamp|timestampfmt|timezone|tips|titlebar|toolbar|treebar|ulevel|url|usermode|vcmd(?:stat|ver)|version|wid|wildsite|window|vnick)\\b",
                     "captures": {
                         "1": {"name": "meta.punctuation.definition.identifier.mrc"},
                         "2": {"name": "meta.keyword.operator.identifier.default.mrc"}

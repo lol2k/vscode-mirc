@@ -296,6 +296,10 @@
             "prefix": "drawsave",
             "body": "drawsave ${1:[-bNqN]} @${2:window} ${3:filename}"
         },
+        "drawsize": {
+            "prefix": "drawsize",
+            "body": "drawsize @${1:window} @${2:x} ${3:y}"
+        },
         "drawscroll": {
             "prefix": "drawscroll",
             "body": "drawscroll ${1:[-hn]} @${2:window} ${3:x} ${4:y} ${5:x} ${6:y} ${7:w} ${8:h} ${9:${10:[xN} ${11:yN} ${12:xN} ${13:yN} ${14:wN} ${15:hN]}}"
