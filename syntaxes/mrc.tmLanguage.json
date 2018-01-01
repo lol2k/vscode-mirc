@@ -42,7 +42,7 @@
         "function-definitions": {
             "patterns": [
                 {
-                    "match": "^(?i)^(alias)\\s+(?:-l\\s+)?(\\w+)\\s+({)",
+                    "match": "^(?i)^(alias)\\s+(?:-l\\s+)?(\\w+)\\s+(?={)",
                     "captures": {
                         "1": {"name": "storage.type.alias.mrc"},
                         "2": {"name": "entity.name.function.mrc"}
